@@ -5,6 +5,8 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
+
+
 public class WCARestTest {
     @Test
     public void hasUrlStringAsRequest(){

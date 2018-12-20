@@ -8,7 +8,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Web_Crawler_main" />
     <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.11.3" level="project" />
     <orderEntry type="library" name="Gradle: pl.pragmatists:JUnitParams:1.0.4" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
