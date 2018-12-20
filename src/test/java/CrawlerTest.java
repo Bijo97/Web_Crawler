@@ -4,6 +4,7 @@ import org.junit.Test;
 public class CrawlerTest {
     @Test
     public void connectionShouldEstablished(){
-        Jsoup.connect("http://www.google.com");
+        String url = "http://www.google.com";
+        Jsoup.connect(url);
     }
 }
