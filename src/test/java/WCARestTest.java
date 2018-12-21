@@ -64,6 +64,25 @@ public class WCARestTest {
         verify(mockedCrawler).getOutput();
         assertEquals("Should return JSON string as response", mockedCrawler.getOutput(), SUT.getResponse());
     }
+
+    @Test
+    public void JSONStringOutputCouldBeEmpty(){
+        // ARRANGE
+        String url = "www.google.com";
+
+        Crawler mockedCrawler = mock(Crawler.class);
+        when(mockedCrawler.getOutput()).thenReturn("{}");
+
+        // Create SUT
+        WCARest SUT = new WCARest(url);
+
+        // ACT
+        SUT.setResponse(mockedCrawler);
+
+        // ASSERT
+        verify(mockedCrawler).getOutput();
+        assertEquals("Should return JSON string as response", mockedCrawler.getOutput(), SUT.getResponse());
+    }
 }
 
 
