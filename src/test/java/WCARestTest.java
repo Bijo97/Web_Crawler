@@ -45,6 +45,25 @@ public class WCARestTest {
         // ASSERT
         assertEquals("WCARest URL could contain type and keyword",url,SUT.getUrl() + " " + SUT.getType() + " " + SUT.getKeyword());
     }
+
+    @Test
+    public void shouldReturnJSONStringAsResponse(){
+        // ARRANGE
+        String url = "www.google.com";
+
+        Crawler mockedCrawler = mock(Crawler.class);
+        when(mockedCrawler.getOutput()).thenReturn("{\"id\": 4, \"time_elapsed\": \"2s\", \"pages_explored\": 5, \"search_depth\":3}");
+
+        // Create SUT
+        WCARest SUT = new WCARest(url);
+
+        // ACT
+        SUT.setResponse(mockedCrawler);
+
+        // ASSERT
+        verify(mockedCrawler).getOutput();
+        assertEquals("Should return JSON string as response", mockedCrawler.getOutput(), SUT.getResponse());
+    }
 }
 
 

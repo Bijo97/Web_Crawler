@@ -1,5 +1,6 @@
 public class WCARest {
     private String request;
+    private String response;
     private String url;
     private String type;
     private String keyword;
@@ -38,5 +39,13 @@ public class WCARest {
 
     public String getKeyword() {
         return keyword;
+    }
+
+    public void setResponse(Crawler crawler) {
+        this.response = crawler.getOutput();
+    }
+
+    public String getResponse() {
+        return response;
     }
 }
