@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2830538c-8ffc-468e-abbb-46869fb2262d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Web_Crawler_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Web_Crawler_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Web_Crawler_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Web_Crawler_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WCARest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WCARest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WCARestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WCARestTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2830538c-8ffc-468e-abbb-46869fb2262d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,6 +37,7 @@
     <session id="1701055542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -86,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="247">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#118#119#0" expanded="true" />
                 <element signature="e#156#157#0" expanded="true" />
@@ -108,15 +100,6 @@
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -547,7 +530,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545320012421" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545321435020" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -589,7 +572,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545317648685</updated>
-      <workItem from="1545317650076" duration="2356000" />
+      <workItem from="1545317650076" duration="3141000" />
     </task>
     <servers />
   </component>
@@ -602,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2356000" />
+    <option name="totallyTimeSpent" value="3141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -616,14 +599,14 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22013423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" weight="0.51914895" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.20141844" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -666,8 +649,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#118#119#0" expanded="true" />
             <element signature="e#156#157#0" expanded="true" />
@@ -681,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="247">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
