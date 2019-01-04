@@ -6,10 +6,10 @@ import java.security.MessageDigest;
 
 public class MediaTest {
     @Test
-    public void shouldHaveGenreFormatYearAndName(){
+    public void shouldHaveGenreFormatYearAndName() throws EmptyMediaException {
         String genre = "comedy";
         String format = "Blu-ray";
-        String year = "";
+        String year = "1999";
         String name = "Office Space";
 
         Media media = new Media(genre,format,year,name);
@@ -20,5 +20,13 @@ public class MediaTest {
         Assert.assertNotNull(media.getName());
     }
 
+    @Test (expected = EmptyMediaException.class)
+    public void genreFormatYearAndNameAreNotEmpty() throws EmptyMediaException {
+        String genre = "comedy";
+        String format = "Blu-ray";
+        String year = "  ";
+        String name = "Office Space";
 
+        Media media = new Media(genre,format,year,name);
+    }
 }
