@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Web Crawler.iml" filepath="$PROJECT_DIR$/.idea/modules/Web Crawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Web_Crawler.iml" filepath="$PROJECT_DIR$/.idea/modules/Web_Crawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Web_Crawler_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Web_Crawler_main.iml" group="Web_Crawler" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Web_Crawler_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Web_Crawler_test.iml" group="Web_Crawler" />
