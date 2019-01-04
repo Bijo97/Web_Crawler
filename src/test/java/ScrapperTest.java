@@ -38,4 +38,18 @@ public class ScrapperTest {
         //ACT
         SUT.setType(type);
     }
+
+    @Test
+    public void keywordCanBeNull() throws NoDataItemsException, WrongFormatException {
+        //ARRANGE
+        String keyword = null;
+        String page = "<html>Something</html>";
+        Scrapper SUT = new Scrapper(page);
+
+        //ACT
+        SUT.setKeyword(keyword);
+
+        //ASSERT
+        Assert.assertEquals("Keyword can be null!", null, SUT.getKeyword());
+    }
 }
