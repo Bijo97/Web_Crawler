@@ -15,7 +15,7 @@ public class ScrapperTest {
     }
 
     @Test
-    public void typeCanBeNull() throws NoDataItemsException{
+    public void typeCanBeNull() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = null;
         String page = "<html>Something</html>";
@@ -29,13 +29,40 @@ public class ScrapperTest {
     }
 
     @Test(expected = WrongFormatException.class)
-    public void ThrowExceptionWhenTypeIsNotCorrect() throws NoDataItemsException {
+    public void ThrowExceptionWhenTypeIsNotCorrect() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
-        String type = null;
+        String type = "biljo";
         String page = "<html>Something</html>";
         Scrapper SUT = new Scrapper(page);
 
         //ACT
         SUT.setType(type);
+    }
+
+    @Test
+    public void keywordCanBeNull() throws NoDataItemsException, WrongFormatException {
+        //ARRANGE
+        String keyword = null;
+        String page = "<html>Something</html>";
+        Scrapper SUT = new Scrapper(page);
+
+        //ACT
+        SUT.setKeyword(keyword);
+
+        //ASSERT
+        Assert.assertEquals("Keyword can be null!", null, SUT.getKeyword());
+    }
+
+    @Test(expected = WrongFormatException.class)
+    public void ThrowExceptionWhenKeywordIsNotCorrect() throws NoDataItemsException, WrongFormatException {
+        //ARRANGE
+        String type = "movies";
+        String keyword = "authors";
+        String page = "<html>Something</html>";
+        Scrapper SUT = new Scrapper(page);
+
+        //ACT
+        SUT.setType(type);
+        SUT.setKeyword(keyword);
     }
 }
