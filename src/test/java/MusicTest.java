@@ -27,5 +27,5 @@ public class MusicTest {
         Music music = new Music(media, artist);
     }
 
-    
+
 }
