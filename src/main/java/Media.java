@@ -24,16 +24,16 @@ public class Media {
                             throw new WrongFormatException("Wrong Year Format. Year format should be yyyy");
                         }
                     } else {
-                        throw new NoDataItemsException("Name should not be null");
+                        throw new NoDataItemsException("Name should not be empty");
                     }
                 } else {
-                    throw new NoDataItemsException("Year should not be null");
+                    throw new NoDataItemsException("Year should not be empty");
                 }
             } else{
-                throw new NoDataItemsException("Format should not be null");
+                throw new NoDataItemsException("Format should not be empty");
             }
         } else {
-            throw new NoDataItemsException( "Genre should not be null");
+            throw new NoDataItemsException( "Genre should not be empty");
         }
 
 

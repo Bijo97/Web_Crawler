@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/MovieTest.java" line="57" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2b767c52-90db-42d7-b5b1-1e6ddb85fb04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MovieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MovieTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -114,14 +117,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="3116" />
-          <entry key="txt" value="111" />
+          <entry key="java" value="3783" />
+          <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3116" />
-          <entry key="PLAIN_TEXT" value="123" />
+          <entry key="JAVA" value="3783" />
+          <entry key="PLAIN_TEXT" value="131" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -175,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="425">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,8 +199,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+            <state relative-caret-position="259">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,16 +211,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="-304">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1332#1333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -260,8 +262,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="74" />
               <folding>
                 <element signature="e#1601#1602#0" expanded="true" />
                 <element signature="e#1629#1630#0" expanded="true" />
@@ -733,7 +735,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546615268903" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546616336597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -753,7 +755,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest.shouldHaveDirectorWritersAndStars">
+  <component name="RunManager" selected="JUnit.MovieTest.directorWritersAndStarsAreNotEmpty">
     <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -784,6 +786,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web_Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieTest" />
+      <option name="METHOD_NAME" value="directorWritersAndStarsAreNotEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -794,30 +806,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WCARestTest.shouldReturnJSONStringAsResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web_Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WCARestTest" />
-      <option name="METHOD_NAME" value="shouldReturnJSONStringAsResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.WCARestTest.shouldReturnJSONStringAsResponse" />
       <item itemvalue="JUnit.MediaTest.shouldHaveGenreFormatYearAndName" />
       <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
       <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
       <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
+      <item itemvalue="JUnit.MovieTest.directorWritersAndStarsAreNotEmpty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.directorWritersAndStarsAreNotEmpty" />
         <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
         <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
         <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
         <item itemvalue="JUnit.MediaTest.shouldHaveGenreFormatYearAndName" />
-        <item itemvalue="JUnit.WCARestTest.shouldReturnJSONStringAsResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -832,7 +834,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545317648685</updated>
       <workItem from="1545317650076" duration="2356000" />
-      <workItem from="1546534921970" duration="11848000" />
+      <workItem from="1546534921970" duration="12935000" />
     </task>
     <task id="LOCAL-00001" summary="WCARest:urlCouldContainTypeAndKeyword">
       <created>1545414133076</created>
@@ -869,25 +871,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546609732255</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Movie : shouldHaveDirectorWritersAndStars">
+      <created>1546615333347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546615333347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 55m 46s.xml">
-      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 56m 52s.xml">
-      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 57m 50s.xml">
-      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 02m 29s.xml">
-      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 12m 47s.xml">
-      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 13m 08s.xml">
       <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
@@ -903,9 +897,24 @@
     <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 20m 30s.xml">
       <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 25m 19s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_directorWritersAndStarsAreNotEmpty - 2019.01.04 at 16h 37m 39s.xml">
+      <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_directorWritersAndStarsAreNotEmpty - 2019.01.04 at 16h 37m 57s.xml">
+      <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_directorWritersAndStarsAreNotEmpty - 2019.01.04 at 16h 38m 23s.xml">
+      <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_directorWritersAndStarsAreNotEmpty - 2019.01.04 at 16h 38m 41s.xml">
+      <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21064000" />
+    <option name="totallyTimeSpent" value="22151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -956,7 +965,8 @@
     <MESSAGE value="Media : shouldHaveGenreFormatYearAndName" />
     <MESSAGE value="Media : genreFormatYearAndNameAreNotEmpty" />
     <MESSAGE value="Media : yearShouldBeStringOf4Number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Media : yearShouldBeStringOf4Number" />
+    <MESSAGE value="Movie : shouldHaveDirectorWritersAndStars" />
+    <option name="LAST_COMMIT_MESSAGE" value="Movie : shouldHaveDirectorWritersAndStars" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Crawler.java" />
@@ -1044,10 +1054,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="74" />
           <folding>
             <element signature="e#1601#1602#0" expanded="true" />
             <element signature="e#1629#1630#0" expanded="true" />
@@ -1061,17 +1078,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="425">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1080,24 +1090,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="-304">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        <state relative-caret-position="259">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
