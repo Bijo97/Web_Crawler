@@ -31,7 +31,30 @@ public class BookTest {
 
     }
 
+    @Test (expected = NoDataItemsException.class)
+    public void artistsPublisherAndISBNAreNotEmpty() throws WrongFormatException, NoDataItemsException {
+        media = new Media(genre,format,year,name);
+        List<String> authors = new ArrayList<>();
 
+        authors.add("Robert C. Martin");
+        String publisher = "Prentice Hall";
+        String isbn = "";
+
+        Book book = new Book(media,authors,publisher,isbn);
+
+    }
+
+    @Test (expected = WrongFormatException.class)
+    public void ISBNFormatIsCorrect() throws WrongFormatException, NoDataItemsException {
+        media = new Media(genre,format,year,name);
+        List<String> authors = new ArrayList<>();
+
+        authors.add("Robert C. Martin");
+        String publisher = "Prentice Hall";
+        String isbn = "007-60920469811";
+        Book book = new Book(media,authors,publisher,isbn);
+
+    }
 
     public static boolean compareList(List ls1,List ls2){
         System.out.println(ls1.toString());
