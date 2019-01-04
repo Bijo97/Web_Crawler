@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b767c52-90db-42d7-b5b1-1e6ddb85fb04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WrongFormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MovieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmptyMediaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NoDataItemsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MediaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MediaTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -104,25 +103,25 @@
     <session id="-535690645">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="1828" />
-          <entry key="txt" value="79" />
+          <entry key="java" value="3116" />
+          <entry key="txt" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1828" />
-          <entry key="PLAIN_TEXT" value="91" />
+          <entry key="JAVA" value="3116" />
+          <entry key="PLAIN_TEXT" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -149,21 +148,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-521">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="748">
               <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="41" />
               <folding>
                 <element signature="e#574#575#0" expanded="true" />
@@ -188,10 +175,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-697">
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,11 +257,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="-374">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#1601#1602#0" expanded="true" />
                 <element signature="e#1629#1630#0" expanded="true" />
@@ -259,15 +285,6 @@
                 <element signature="e#81#82#0" expanded="true" />
                 <element signature="e#110#111#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -590,11 +607,13 @@
         <option value="$PROJECT_DIR$/src/test/java/Crawler.java" />
         <option value="$PROJECT_DIR$/src/main/java/WCARest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Crawler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/WCARestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmptyMediaException.java" />
         <option value="$PROJECT_DIR$/src/main/java/WrongFormatException.java" />
         <option value="$PROJECT_DIR$/src/test/java/MediaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/WCARestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Media.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MovieTest.java" />
       </list>
     </option>
   </component>
@@ -714,7 +733,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546609698864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546615268903" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -734,7 +753,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MediaTest.yearShouldBeStringOf4Number">
+  <component name="RunManager" selected="JUnit.MovieTest.shouldHaveDirectorWritersAndStars">
     <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -765,11 +784,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WCARestTest.JSONStringOutputCouldBeEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WCARestTest" />
-      <option name="METHOD_NAME" value="JSONStringOutputCouldBeEmpty" />
+      <option name="MAIN_CLASS_NAME" value="MovieTest" />
+      <option name="METHOD_NAME" value="shouldHaveDirectorWritersAndStars" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -787,18 +806,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.WCARestTest.shouldReturnJSONStringAsResponse" />
-      <item itemvalue="JUnit.WCARestTest.JSONStringOutputCouldBeEmpty" />
       <item itemvalue="JUnit.MediaTest.shouldHaveGenreFormatYearAndName" />
       <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
       <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
+      <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
         <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
         <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
         <item itemvalue="JUnit.MediaTest.shouldHaveGenreFormatYearAndName" />
         <item itemvalue="JUnit.WCARestTest.shouldReturnJSONStringAsResponse" />
-        <item itemvalue="JUnit.WCARestTest.JSONStringOutputCouldBeEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -813,7 +832,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545317648685</updated>
       <workItem from="1545317650076" duration="2356000" />
-      <workItem from="1546534921970" duration="6666000" />
+      <workItem from="1546534921970" duration="11848000" />
     </task>
     <task id="LOCAL-00001" summary="WCARest:urlCouldContainTypeAndKeyword">
       <created>1545414133076</created>
@@ -843,49 +862,56 @@
       <option name="project" value="LOCAL" />
       <updated>1546608821241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Media : yearShouldBeStringOf4Number">
+      <created>1546609732255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546609732255</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MediaTest_genreFormatYearAndNameAreNotEmpty - 2019.01.04 at 14h 29m 32s.xml">
-      <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 55m 46s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_shouldHaveGenreFormatYearAndName - 2019.01.04 at 14h 31m 08s.xml">
-      <configuration name="MediaTest.shouldHaveGenreFormatYearAndName" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 56m 52s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_shouldHaveGenreFormatYearAndName - 2019.01.04 at 14h 31m 15s.xml">
-      <configuration name="MediaTest.shouldHaveGenreFormatYearAndName" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 15h 57m 50s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_genreFormatYearAndNameAreNotEmpty - 2019.01.04 at 14h 31m 21s.xml">
-      <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 02m 29s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_genreFormatYearAndNameAreNotEmpty - 2019.01.04 at 14h 31m 33s.xml">
-      <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 12m 47s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_genreFormatYearAndNameAreNotEmpty - 2019.01.04 at 14h 32m 35s.xml">
-      <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 13m 08s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 10s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 17m 35s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 20s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 18m 16s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 44s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 19m 27s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 56s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
+    <history-entry file="MovieTest_shouldHaveDirectorWritersAndStars - 2019.01.04 at 16h 20m 30s.xml">
+      <configuration name="MovieTest.shouldHaveDirectorWritersAndStars" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15882000" />
+    <option name="totallyTimeSpent" value="21064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17315437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -894,7 +920,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32340425" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32340425" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -907,7 +933,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
@@ -929,7 +955,8 @@
     <MESSAGE value="WCARest:shouldReturnJSONStringAsResponse" />
     <MESSAGE value="Media : shouldHaveGenreFormatYearAndName" />
     <MESSAGE value="Media : genreFormatYearAndNameAreNotEmpty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Media : genreFormatYearAndNameAreNotEmpty" />
+    <MESSAGE value="Media : yearShouldBeStringOf4Number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Media : yearShouldBeStringOf4Number" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Crawler.java" />
@@ -943,69 +970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="2" />
-          <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="41" />
-          <folding>
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NoDataItemsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding>
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-521">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1027,20 +995,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NoDataItemsException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="2" />
+          <folding>
+            <element signature="e#81#82#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="-374">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#1601#1602#0" expanded="true" />
             <element signature="e#1629#1630#0" expanded="true" />
@@ -1050,6 +1057,49 @@
             <element signature="e#1749#1750#0" expanded="true" />
             <element signature="e#1780#1781#0" expanded="true" />
             <element signature="e#1807#1808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
