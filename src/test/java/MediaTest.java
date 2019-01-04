@@ -1,12 +1,10 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.security.MessageDigest;
-
 
 public class MediaTest {
     @Test
-    public void shouldHaveGenreFormatYearAndName() throws EmptyMediaException {
+    public void shouldHaveGenreFormatYearAndName() throws NoDataItemsException, WrongFormatException {
         String genre = "comedy";
         String format = "Blu-ray";
         String year = "1999";
@@ -20,11 +18,21 @@ public class MediaTest {
         Assert.assertNotNull(media.getName());
     }
 
-    @Test (expected = EmptyMediaException.class)
-    public void genreFormatYearAndNameAreNotEmpty() throws EmptyMediaException {
+    @Test (expected = NoDataItemsException.class)
+    public void genreFormatYearAndNameAreNotEmpty() throws NoDataItemsException, WrongFormatException {
         String genre = "comedy";
         String format = "Blu-ray";
         String year = "  ";
+        String name = "Office Space";
+
+        Media media = new Media(genre,format,year,name);
+    }
+
+    @Test (expected = WrongFormatException.class)
+    public void yearShouldBeStringOf4Number() throws NoDataItemsException, WrongFormatException {
+        String genre = "comedy";
+        String format = "Blu-ray";
+        String year = "1997a";
         String name = "Office Space";
 
         Media media = new Media(genre,format,year,name);
