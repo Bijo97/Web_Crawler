@@ -16,7 +16,11 @@ public class Scrapper {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setType(String type) throws WrongFormatException {
+        if (type == null || type.equals("movies") || type.equals("musics") || type.equals("books")){
+            this.type = type;
+        } else {
+            throw new WrongFormatException("Type can only be movies, musics, books, or null!");
+        }
     }
 }

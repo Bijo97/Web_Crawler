@@ -15,7 +15,7 @@ public class ScrapperTest {
     }
 
     @Test
-    public void typeCanBeNull() throws NoDataItemsException{
+    public void typeCanBeNull() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = null;
         String page = "<html>Something</html>";
@@ -29,9 +29,9 @@ public class ScrapperTest {
     }
 
     @Test(expected = WrongFormatException.class)
-    public void ThrowExceptionWhenTypeIsNotCorrect() throws NoDataItemsException {
+    public void ThrowExceptionWhenTypeIsNotCorrect() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
-        String type = null;
+        String type = "biljo";
         String page = "<html>Something</html>";
         Scrapper SUT = new Scrapper(page);
 
