@@ -26,8 +26,6 @@ public class MovieTest {
 
         media = new Media(genre,format,year,name);
 
-
-
         String director = "Mike Judge";
         writers.add("William Goldman");
         stars.add("Ron Livingston");

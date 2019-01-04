@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/MovieTest.java" line="57" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/MovieTest.java" line="55" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b767c52-90db-42d7-b5b1-1e6ddb85fb04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ScrapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MusicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MovieTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -108,25 +106,25 @@
     <session id="-535690645">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="3783" />
-          <entry key="txt" value="119" />
+          <entry key="java" value="4080" />
+          <entry key="txt" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3783" />
-          <entry key="PLAIN_TEXT" value="131" />
+          <entry key="JAVA" value="4080" />
+          <entry key="PLAIN_TEXT" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -161,11 +159,63 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="1306" column="12" selection-start-line="1306" selection-start-column="12" selection-end-line="1306" selection-end-column="12" />
+            <state relative-caret-position="-157">
+              <caret line="1034" column="12" selection-start-line="1034" selection-start-column="12" selection-end-line="1034" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="116" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Music.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -508,9 +558,11 @@
         <option value="$PROJECT_DIR$/src/test/java/WCARestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Media.java" />
         <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MovieTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Scrapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ScrapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MovieTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MusicTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Music.java" />
       </list>
     </option>
   </component>
@@ -596,6 +648,32 @@
               <item name="Web Crawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Web Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Crawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Crawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Crawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web Crawler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -606,8 +684,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546616336597" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546613463797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546621330620" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -627,7 +704,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect">
+  <component name="RunManager" selected="JUnit.MusicTest.shouldHaveArtist">
     <configuration name="MovieTest.directorWritersAndStarsAreNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -642,6 +719,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MovieTest" />
       <option name="METHOD_NAME" value="shouldHaveDirectorWritersAndStars" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicTest.shouldHaveArtist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web_Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MusicTest" />
+      <option name="METHOD_NAME" value="shouldHaveArtist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -666,16 +753,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web_Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrapperTest" />
-      <option name="METHOD_NAME" value="ThrowExceptionWhenTypeIsNotCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ScrapperTest.pageIsNotNullOtherwiseThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -686,32 +763,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrapperTest.typeCanBeNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web_Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrapperTest" />
-      <option name="METHOD_NAME" value="typeCanBeNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenPageISEmpty" />
-      <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" />
       <item itemvalue="JUnit.ScrapperTest.pageIsNotNullOtherwiseThrowException" />
-      <item itemvalue="JUnit.ScrapperTest.typeCanBeNull" />
       <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
       <item itemvalue="JUnit.MovieTest.directorWritersAndStarsAreNotEmpty" />
+      <item itemvalue="JUnit.MusicTest.shouldHaveArtist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MusicTest.shouldHaveArtist" />
         <item itemvalue="JUnit.MovieTest.directorWritersAndStarsAreNotEmpty" />
         <item itemvalue="JUnit.MovieTest.shouldHaveDirectorWritersAndStars" />
         <item itemvalue="JUnit.ScrapperTest.pageIsNotNullOtherwiseThrowException" />
         <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenPageISEmpty" />
-        <item itemvalue="JUnit.ScrapperTest.typeCanBeNull" />
-        <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -770,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546615333347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix workspace.xml">
+      <created>1546619443663</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546619443663</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -806,13 +878,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19177000" />
+    <option name="totallyTimeSpent" value="20731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -858,7 +930,8 @@
     <MESSAGE value="Media : genreFormatYearAndNameAreNotEmpty" />
     <MESSAGE value="Media : yearShouldBeStringOf4Number" />
     <MESSAGE value="Movie : shouldHaveDirectorWritersAndStars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie : shouldHaveDirectorWritersAndStars" />
+    <MESSAGE value="fix workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix workspace.xml" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Crawler.java" />
@@ -925,18 +998,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="118" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="118" />
+          <folding>
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -963,19 +1029,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ScrapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="1034" column="12" selection-start-line="1034" selection-start-column="12" selection-end-line="1034" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Media.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="116" lean-forward="true" selection-start-line="5" selection-start-column="98" selection-end-line="5" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Music.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
           </folding>
         </state>
       </provider>
