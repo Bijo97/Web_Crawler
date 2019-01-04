@@ -23,4 +23,20 @@ public class ConverterTest {
         assertEquals("Should return empty JSON string when Media object is null", "", result);
     }
 
+    @Test
+    public void shouldReturnJSONStringOfTheMediaObject() throws WrongFormatException, NoDataItemsException {
+        // ARRANGE
+        String expected = "{\"genre\": Drama, \"format\": \"Bluray\", \"year\": 1963, \"name\":Pride and Prejudice}";
+        Media m = new Media("Drama","Bluray","1963","Pride and Prejudice");
+
+        // Create SUT
+        Converter SUT = new Converter();
+
+        // ACT
+        String result = SUT.convert(m);
+
+        // ASSERT
+        assertEquals("Should return correct JSON string", expected, result);
+    }
+
 }
