@@ -26,7 +26,7 @@ public class ConverterTest {
     @Test
     public void shouldReturnJSONStringOfTheMediaObject() throws WrongFormatException, NoDataItemsException {
         // ARRANGE
-        String expected = "{\"genre\": Drama, \"format\": \"Bluray\", \"year\": 1963, \"name\":Pride and Prejudice}";
+        String expected = "{\"format\":\"Bluray\",\"genre\":\"Drama\",\"name\":\"Pride and Prejudice\",\"year\":\"1963\"}";
         Media m = new Media("Drama","Bluray","1963","Pride and Prejudice");
 
         // Create SUT
