@@ -88,14 +88,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2070" />
-          <entry key="txt" value="175" />
+          <entry key="java" value="2737" />
+          <entry key="txt" value="195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2070" />
-          <entry key="PLAIN_TEXT" value="175" />
+          <entry key="JAVA" value="2737" />
+          <entry key="PLAIN_TEXT" value="195" />
         </counts>
       </usages-collector>
     </session>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ScrapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,14 +161,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="183">
+              <caret line="54" column="132" selection-start-line="54" selection-start-column="132" selection-end-line="54" selection-end-column="132" />
               <folding>
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
                 <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -561,8 +560,8 @@
         <option value="$PROJECT_DIR$/src/main/java/WrongFormatException.java" />
         <option value="$PROJECT_DIR$/src/test/java/MediaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Media.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ScrapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Scrapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ScrapperTest.java" />
       </list>
     </option>
   </component>
@@ -679,7 +678,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546614677760" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546616292670" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -699,7 +698,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ScrapperTest.keywordCanBeNull">
+  <component name="RunManager" selected="JUnit.ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect">
+    <configuration name="ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web_Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScrapperTest" />
+      <option name="METHOD_NAME" value="ThrowExceptionWhenKeywordIsNotCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScrapperTest.ThrowExceptionWhenPageISEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -730,16 +739,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrapperTest.pageIsNotEmptyOtherwiseThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web_Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScrapperTest" />
-      <option name="METHOD_NAME" value="pageIsNotEmptyOtherwiseThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ScrapperTest.typeCanBeNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -751,19 +750,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ScrapperTest.pageIsNotEmptyOtherwiseThrowException" />
       <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenPageISEmpty" />
       <item itemvalue="JUnit.ScrapperTest.typeCanBeNull" />
       <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" />
       <item itemvalue="JUnit.ScrapperTest.keywordCanBeNull" />
+      <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect" />
         <item itemvalue="JUnit.ScrapperTest.keywordCanBeNull" />
         <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" />
         <item itemvalue="JUnit.ScrapperTest.typeCanBeNull" />
         <item itemvalue="JUnit.ScrapperTest.ThrowExceptionWhenPageISEmpty" />
-        <item itemvalue="JUnit.ScrapperTest.pageIsNotEmptyOtherwiseThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -822,19 +821,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546614152758</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Scrapper : KeywordCanBeNull">
+      <created>1546614727372</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546614727372</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScrapperTest_pageIsNotNullOtherwiseThrowException - 2019.01.04 at 15h 20m 54s.xml">
-      <configuration name="ScrapperTest.pageIsNotNullOtherwiseThrowException" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScrapperTest_pageIsNotEmptyOtherwiseThrowException - 2019.01.04 at 15h 24m 24s.xml">
-      <configuration name="ScrapperTest.pageIsNotEmptyOtherwiseThrowException" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScrapperTest_pageIsNotEmptyOtherwiseThrowException - 2019.01.04 at 15h 24m 39s.xml">
-      <configuration name="ScrapperTest.pageIsNotEmptyOtherwiseThrowException" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ScrapperTest_ThrowExceptionWhenPageISEmpty - 2019.01.04 at 15h 34m 45s.xml">
       <configuration name="ScrapperTest.ThrowExceptionWhenPageISEmpty" configurationId="JUnit" />
     </history-entry>
@@ -856,9 +853,18 @@
     <history-entry file="ScrapperTest_ThrowExceptionWhenTypeIsNotCorrect - 2019.01.04 at 16h 01m 41s.xml">
       <configuration name="ScrapperTest.ThrowExceptionWhenTypeIsNotCorrect" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ScrapperTest_keywordCanBeNull - 2019.01.04 at 16h 11m 21s.xml">
+      <configuration name="ScrapperTest.keywordCanBeNull" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScrapperTest_ThrowExceptionWhenKeywordIsNotCorrect - 2019.01.04 at 16h 21m 18s.xml">
+      <configuration name="ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScrapperTest_ThrowExceptionWhenKeywordIsNotCorrect - 2019.01.04 at 16h 38m 03s.xml">
+      <configuration name="ScrapperTest.ThrowExceptionWhenKeywordIsNotCorrect" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20444000" />
+    <option name="totallyTimeSpent" value="22056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -873,7 +879,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3229508" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3229508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -881,7 +887,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.517934" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3262295" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3262295" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -910,7 +916,8 @@
     <MESSAGE value="Media : genreFormatYearAndNameAreNotEmpty" />
     <MESSAGE value="Scrapper : pageIsNotNull, ThrowExceptionWhenPageIsEmpty, typeCanBeNull" />
     <MESSAGE value="Scrapper : ThrowExceptionWhenTypeIsNotCorrect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scrapper : ThrowExceptionWhenTypeIsNotCorrect" />
+    <MESSAGE value="Scrapper : KeywordCanBeNull" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scrapper : KeywordCanBeNull" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Crawler.java" />
@@ -1011,22 +1018,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Scrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="183">
+          <caret line="54" column="132" selection-start-line="54" selection-start-column="132" selection-end-line="54" selection-end-column="132" />
           <folding>
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ScrapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

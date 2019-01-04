@@ -52,4 +52,17 @@ public class ScrapperTest {
         //ASSERT
         Assert.assertEquals("Keyword can be null!", null, SUT.getKeyword());
     }
+
+    @Test(expected = WrongFormatException.class)
+    public void ThrowExceptionWhenKeywordIsNotCorrect() throws NoDataItemsException, WrongFormatException {
+        //ARRANGE
+        String type = "movies";
+        String keyword = "authors";
+        String page = "<html>Something</html>";
+        Scrapper SUT = new Scrapper(page);
+
+        //ACT
+        SUT.setType(type);
+        SUT.setKeyword(keyword);
+    }
 }
