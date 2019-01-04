@@ -17,6 +17,15 @@ public class MusicTest {
         Music music = new Music(media, artist);
 
         Assert.assertEquals("Ludwig van Beethoven", music.getArtist());
-
     }
+
+    @Test (expected = NoDataItemsException.class)
+    public void artistIsNotEmpty() throws WrongFormatException, NoDataItemsException {
+        media = new Media(genre,format,year,name);
+        String artist = "";
+
+        Music music = new Music(media, artist);
+    }
+
+    
 }
