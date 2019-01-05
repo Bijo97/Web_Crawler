@@ -2,6 +2,9 @@ public class Scrapper {
     String page;
     String type;
     String keyword;
+    Movie movie;
+    Music music;
+    Book book;
 
     public Scrapper(String page) throws NoDataItemsException {
         Boolean checkPage = page.trim().isEmpty() || page == null;
@@ -36,24 +39,41 @@ public class Scrapper {
             } else {
                 throw new WrongFormatException("Keyword for type: null can only be null!");
             }
-        } else if (this.type.equals("movies")){
-            if (keyword.equals("genre") || keyword.equals("format") || keyword.equals("year") || keyword.equals("director") || keyword.equals("stars") || keyword.equals("writers")){
-                this.keyword = keyword;
-            } else {
-                throw new WrongFormatException("Keyword for type: movies can only be genre, format, year, director, stars, or writers!");
-            }
-        } else if (this.type.equals("musics")){
-            if (keyword.equals("genre") || keyword.equals("format") || keyword.equals("year") || keyword.equals("artist")){
-                this.keyword = keyword;
-            } else {
-                throw new WrongFormatException("Keyword for type: musics can only be genre, forma, year, or artist!");
-            }
-        } else if (this.type.equals("books")){
-            if (keyword.equals("genre") || keyword.equals("format") || keyword.equals("year") || keyword.equals("authors") || keyword.equals("ISBN") || keyword.equals("publisher")){
-                this.keyword = keyword;
-            } else {
-                throw new WrongFormatException("Keyword for type: books can only be genre, format, year, authors, ISBN, or publisher!");
-            }
+        } else {
+            this.keyword = keyword;
         }
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
+
+    public Music getMusic() {
+        return music;
+    }
+
+    public void setMusic(Music music) {
+        this.music = music;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
+    public Object[] scrapping() {
+        if (type == null && keyword == null){
+            //Jsoup...
+            return new Object[] {movie, music, book};
+        }
+
+        return new Object[] {};
     }
 }
