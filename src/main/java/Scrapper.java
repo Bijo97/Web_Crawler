@@ -1,3 +1,10 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+
 public class Scrapper {
     String page;
     String type;
@@ -70,7 +77,32 @@ public class Scrapper {
 
     public Object[] scrapping() {
         if (type == null && keyword == null){
-            //Jsoup...
+
+            try {
+                Document doc = Jsoup.connect(page).get();
+
+                String _name = doc.select("div.media-details > h1").first().text();
+                String _category = doc.select("div.media-details > table > tbody > tr").first().child(1).text();
+                Elements datas = doc.select("div.media-details > table > tbody > tr");
+                String _genre = datas.get(1).child(1).text();
+                String _format = datas.get(2).child(1).text();
+                String _year = datas.get(3).child(1).text();
+
+                if (_category.equals("Music")){
+                    String _artist = datas.get(4).child(1).text();
+
+                    Media m = new Media(_genre,_format,_year,_name);
+                    this.music = new Music(m,_artist);
+                    System.out.println(this.music.getArtist());
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (WrongFormatException e) {
+                e.printStackTrace();
+            } catch (NoDataItemsException e) {
+                e.printStackTrace();
+            }
+
             return new Object[] {movie, music, book};
         }
 

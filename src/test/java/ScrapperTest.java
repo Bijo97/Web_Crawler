@@ -77,7 +77,7 @@ public class ScrapperTest {
         //ARRANGE
         String type = null;
         String keyword = null;
-        String page = "<html>Something</html>";
+        String page = "http://localhost/project/sample_site_to_crawl/details.php?id=301";
         Scrapper SUT = new Scrapper(page);
 
 //        String genre = "Comedy";
