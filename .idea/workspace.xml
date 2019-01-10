@@ -105,25 +105,25 @@
     <session id="-535690645">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="5986" />
-          <entry key="txt" value="202" />
+          <entry key="java" value="6313" />
+          <entry key="txt" value="257" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5986" />
-          <entry key="PLAIN_TEXT" value="214" />
+          <entry key="JAVA" value="6313" />
+          <entry key="PLAIN_TEXT" value="269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -138,18 +138,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -174,12 +162,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="187">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
                 <element signature="e#286#287#0" expanded="true" />
               </folding>
@@ -235,11 +224,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -255,6 +244,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>baseAd</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -577,8 +574,9 @@
         <option value="$PROJECT_DIR$/src/test/java/MusicTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/test/java/BookTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CrawlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UrlValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Crawler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CrawlerTest.java" />
       </list>
     </option>
   </component>
@@ -699,7 +697,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547116095332" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547117252140" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -719,22 +717,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CrawlerTest.baseAddressIsNotEmpty">
+  <component name="RunManager" selected="JUnit.CrawlerTest.baseAddressSyntaxIsCorrect">
     <configuration name="BookTest.ISBNFormatIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BookTest" />
       <option name="METHOD_NAME" value="ISBNFormatIsCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTest.ISBNShouldBeUnique" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Web_Crawler_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookTest" />
-      <option name="METHOD_NAME" value="ISBNShouldBeUnique" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -758,6 +746,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Web_Crawler_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrawlerTest" />
+      <option name="METHOD_NAME" value="baseAddressSyntaxIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CrawlerTest.shouldHasBaseAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -769,19 +767,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BookTest.ISBNShouldBeUnique" />
       <item itemvalue="JUnit.BookTest.ISBNFormatIsCorrect" />
       <item itemvalue="JUnit.CrawlerTest" />
       <item itemvalue="JUnit.CrawlerTest.shouldHasBaseAddress" />
       <item itemvalue="JUnit.CrawlerTest.baseAddressIsNotEmpty" />
+      <item itemvalue="JUnit.CrawlerTest.baseAddressSyntaxIsCorrect" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrawlerTest.baseAddressSyntaxIsCorrect" />
         <item itemvalue="JUnit.CrawlerTest.baseAddressIsNotEmpty" />
         <item itemvalue="JUnit.CrawlerTest.shouldHasBaseAddress" />
         <item itemvalue="JUnit.CrawlerTest" />
         <item itemvalue="JUnit.BookTest.ISBNFormatIsCorrect" />
-        <item itemvalue="JUnit.BookTest.ISBNShouldBeUnique" />
       </list>
     </recent_temporary>
   </component>
@@ -797,7 +795,7 @@
       <updated>1545317648685</updated>
       <workItem from="1545317650076" duration="2356000" />
       <workItem from="1546534921970" duration="12935000" />
-      <workItem from="1547114976403" duration="1042000" />
+      <workItem from="1547114976403" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="WCARest:urlCouldContainTypeAndKeyword">
       <created>1545414133076</created>
@@ -876,49 +874,56 @@
       <option name="project" value="LOCAL" />
       <updated>1546623947447</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Crawler : shouldHasBaseAddress + baseAdressIsNotEmpty">
+      <created>1547116125043</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547116125044</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_artistsPublisherAndISBNAreNotEmpty - 2019.01.04 at 18h 25m 18s.xml">
-      <configuration name="BookTest.artistsPublisherAndISBNAreNotEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_artistsPublisherAndISBNAreNotEmpty - 2019.01.04 at 18h 25m 28s.xml">
-      <configuration name="BookTest.artistsPublisherAndISBNAreNotEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_artistsPublisherAndISBNAreNotEmpty - 2019.01.04 at 18h 25m 36s.xml">
-      <configuration name="BookTest.artistsPublisherAndISBNAreNotEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_ISBNShouldBeUnique - 2019.01.04 at 18h 27m 53s.xml">
-      <configuration name="BookTest.ISBNShouldBeUnique" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_ISBNFormatIsCorrect - 2019.01.04 at 18h 44m 37s.xml">
-      <configuration name="BookTest.ISBNFormatIsCorrect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_ISBNFormatIsCorrect - 2019.01.04 at 18h 45m 03s.xml">
-      <configuration name="BookTest.ISBNFormatIsCorrect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_ISBNFormatIsCorrect - 2019.01.04 at 18h 45m 08s.xml">
-      <configuration name="BookTest.ISBNFormatIsCorrect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_ISBNFormatIsCorrect - 2019.01.04 at 18h 45m 30s.xml">
-      <configuration name="BookTest.ISBNFormatIsCorrect" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CrawlerTest - 2019.01.10 at 11h 16m 38s.xml">
-      <configuration name="CrawlerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrawlerTest_shouldHasBaseAddress - 2019.01.10 at 11h 19m 21s.xml">
       <configuration name="CrawlerTest.shouldHasBaseAddress" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CrawlerTest_baseAddressIsNotEmpty - 2019.01.10 at 11h 27m 28s.xml">
+      <configuration name="CrawlerTest.baseAddressIsNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressIsNotEmpty - 2019.01.10 at 11h 28m 07s.xml">
+      <configuration name="CrawlerTest.baseAddressIsNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 34m 16s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 34m 23s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 34m 31s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 36m 46s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 36m 55s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 37m 07s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CrawlerTest_baseAddressSyntaxIsCorrect - 2019.01.10 at 11h 37m 38s.xml">
+      <configuration name="CrawlerTest.baseAddressSyntaxIsCorrect" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24693000" />
+    <option name="totallyTimeSpent" value="25904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -927,7 +932,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3219858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3219858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -969,7 +974,8 @@
     <MESSAGE value="Music : artistIsNotEmpty" />
     <MESSAGE value="Book : shouldHaveAuthorsPublisherAndISBN" />
     <MESSAGE value="Book : ISBNFormatIsCorrect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Book : ISBNFormatIsCorrect" />
+    <MESSAGE value="Crawler : shouldHasBaseAddress + baseAdressIsNotEmpty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crawler : shouldHasBaseAddress + baseAdressIsNotEmpty" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Crawler.java" />
@@ -1061,26 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1098,13 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Music.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1119,13 +1098,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MusicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="187">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#252#253#0" expanded="true" />
             <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CrawlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
