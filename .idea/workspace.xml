@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b767c52-90db-42d7-b5b1-1e6ddb85fb04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConverterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -40,7 +42,8 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -63,13 +66,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="5" />
-          <entry key="java" value="537" />
+          <entry key="java" value="860" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="537" />
+          <entry key="JAVA" value="860" />
         </counts>
       </usages-collector>
     </session>
@@ -135,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="1121">
               <caret line="64" column="63" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="551">
               <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="247">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,7 +193,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -198,7 +201,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="437">
               <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
             </state>
           </provider>
@@ -207,7 +210,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="703">
               <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
@@ -536,8 +539,8 @@
         <option value="$PROJECT_DIR$/src/test/java/MediaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Media.java" />
         <option value="$PROJECT_DIR$/src/test/java/main/ConverterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ConverterTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/ConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Converter.java" />
       </list>
     </option>
@@ -549,9 +552,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -665,7 +669,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546614142258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547118474225" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TCI" />
   </component>
   <component name="RecentsManager">
@@ -685,7 +689,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConverterTest.shouldReturnJSONStringOfTheMediaObject">
+  <component name="RunManager" selected="JUnit.ConverterTest.shouldReturnJSONStringOfMetadataParameters">
     <configuration name="ConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -704,21 +708,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConverterTest.shouldReturnJSONStringOfMetadataParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConverterTest" />
-      <option name="METHOD_NAME" value="shouldReturnJSONStringOfTheMediaObject" />
+      <option name="METHOD_NAME" value="shouldReturnJSONStringOfMetadataParameters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Web_Crawler_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MediaTest" />
-      <option name="METHOD_NAME" value="genreFormatYearAndNameAreNotEmpty" />
+      <option name="MAIN_CLASS_NAME" value="ConverterTest" />
+      <option name="METHOD_NAME" value="shouldReturnJSONStringOfTheMediaObject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -735,19 +739,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
       <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
       <item itemvalue="JUnit.ConverterTest" />
       <item itemvalue="JUnit.ConverterTest.shouldReturnEmptyJSONStringWhenMediaObjectIsNull" />
       <item itemvalue="JUnit.ConverterTest.shouldReturnJSONStringOfTheMediaObject" />
+      <item itemvalue="JUnit.ConverterTest.shouldReturnJSONStringOfMetadataParameters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConverterTest.shouldReturnJSONStringOfMetadataParameters" />
         <item itemvalue="JUnit.ConverterTest.shouldReturnJSONStringOfTheMediaObject" />
         <item itemvalue="JUnit.ConverterTest.shouldReturnEmptyJSONStringWhenMediaObjectIsNull" />
         <item itemvalue="JUnit.ConverterTest" />
         <item itemvalue="JUnit.MediaTest.yearShouldBeStringOf4Number" />
-        <item itemvalue="JUnit.MediaTest.genreFormatYearAndNameAreNotEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -763,6 +767,7 @@
       <updated>1545317648685</updated>
       <workItem from="1545317650076" duration="2356000" />
       <workItem from="1546534921970" duration="6666000" />
+      <workItem from="1547114751522" duration="3660000" />
     </task>
     <task id="LOCAL-00001" summary="WCARest:urlCouldContainTypeAndKeyword">
       <created>1545414133076</created>
@@ -796,18 +801,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MediaTest_genreFormatYearAndNameAreNotEmpty - 2019.01.04 at 14h 32m 35s.xml">
-      <configuration name="MediaTest.genreFormatYearAndNameAreNotEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 10s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 20s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 44s.xml">
-      <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MediaTest_yearShouldBeStringOf4Number - 2019.01.04 at 14h 47m 56s.xml">
       <configuration name="MediaTest.yearShouldBeStringOf4Number" configurationId="JUnit" />
     </history-entry>
@@ -826,15 +819,27 @@
     <history-entry file="ConverterTest_shouldReturnJSONStringOfTheMediaObject - 2019.01.04 at 15h 52m 10s.xml">
       <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConverterTest_shouldReturnJSONStringOfTheMediaObject - 2019.01.04 at 16h 00m 01s.xml">
+      <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConverterTest_shouldReturnJSONStringOfTheMediaObject - 2019.01.04 at 16h 00m 27s.xml">
+      <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConverterTest_shouldReturnJSONStringOfTheMediaObject - 2019.01.04 at 16h 03m 10s.xml">
+      <configuration name="ConverterTest.shouldReturnJSONStringOfTheMediaObject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConverterTest_shouldReturnJSONStringOfMetadataParameters - 2019.01.10 at 11h 55m 11s.xml">
+      <configuration name="ConverterTest.shouldReturnJSONStringOfMetadataParameters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19595000" />
+    <option name="totallyTimeSpent" value="23540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22348994" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22684564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -843,7 +848,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32340425" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32340425" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -935,13 +940,6 @@
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NoDataItemsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -979,20 +977,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="49" />
+        <state relative-caret-position="1121">
+          <caret line="64" column="63" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WCARestTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MediaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="64" column="63" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+        <state relative-caret-position="551">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1015,15 +1013,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="437">
           <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WCARest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="247">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1033,7 +1038,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Converter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
