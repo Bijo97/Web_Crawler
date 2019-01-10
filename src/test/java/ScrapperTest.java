@@ -112,12 +112,14 @@ public class ScrapperTest {
         Music mockedMusic = mock(Music.class);
         Book mockedBook = mock(Book.class);
 
-        //ACT
         SUT.setType(type);
         SUT.setKeyword(keyword);
         SUT.setMovie(mockedMovie);
         SUT.setMusic(mockedMusic);
         SUT.setBook(mockedBook);
+
+        //ACT
+
 
         //ASSERT
         Assert.assertArrayEquals("Scrapper should return all data when type and keyword are null!", new Object[] {mockedMovie, mockedMusic, mockedBook}, SUT.scrapping());
