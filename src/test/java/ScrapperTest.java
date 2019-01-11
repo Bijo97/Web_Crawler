@@ -37,7 +37,7 @@ public class ScrapperTest {
 
     @Parameters(method = "getEmptyPage")
     @Test(expected = NoDataItemsException.class)
-    public void ThrowExceptionWhenPageIsEmpty(String _page) throws NoDataItemsException {
+    public void throwExceptionWhenURLStringIsEmpty(String _page) throws NoDataItemsException {
         String page = _page;
         Scrapper SUT = new Scrapper(page);
     }
