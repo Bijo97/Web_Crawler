@@ -1,5 +1,8 @@
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,16 +10,27 @@ import java.util.List;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+@RunWith(JUnitParamsRunner.class)
 public class ScrapperTest {
+
+    private static final Object[] getPagesVariables() {
+        return new Object[] {
+                new Object[] {"http://localhost/project/sample_site_to_crawl/details.php?id=301"},
+                new Object[] {""}
+        };
+    }
+
+    @Parameters(method = "getPagesVariables")
     @Test
-    public void pageIsNotNull() throws NoDataItemsException {
-        String page = "<html>Something</html>";
+    public void pageIsNotNull(String _page) throws NoDataItemsException {
+        String page = _page;
         Scrapper SUT = new Scrapper(page);
     }
 
+    @Parameters(method = "getPagesVariables")
     @Test(expected = NoDataItemsException.class)
-    public void ThrowExceptionWhenPageISEmpty() throws NoDataItemsException {
-        String page = "";
+    public void ThrowExceptionWhenPageIsEmpty(String _page) throws NoDataItemsException {
+        String page = _page;
         Scrapper SUT = new Scrapper(page);
     }
 
@@ -24,7 +38,7 @@ public class ScrapperTest {
     public void typeCanBeNull() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = null;
-        String page = "<html>Something</html>";
+        String page = "http://localhost/project/sample_site_to_crawl/details.php?id=301";
         Scrapper SUT = new Scrapper(page);
 
         //ACT
@@ -38,7 +52,7 @@ public class ScrapperTest {
     public void ThrowExceptionWhenTypeIsNotCorrect() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = "biljo";
-        String page = "<html>Something</html>";
+        String page = "http://localhost/project/sample_site_to_crawl/details.php?id=301";
         Scrapper SUT = new Scrapper(page);
 
         //ACT
@@ -87,7 +101,7 @@ public class ScrapperTest {
 //        Media media = new Media(genre,format,year,name);
 //        String director = "Mike Judge";
 //        List<String> writers = new ArrayList<>();
-//        List<String> stars = new ArrayList<>();
+//        List<String> stars = new ArrayList<>();]]]]]]]]]]]]]]]]]]]]]
 //        Movie movie = new Movie(media, director, writers, stars);
 //
 //        genre = "Classic";

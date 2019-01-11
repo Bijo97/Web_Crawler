@@ -80,6 +80,15 @@ public class Scrapper {
     public Object[] scrapping() {
         if (type == null && keyword == null){
 
+            return new Object[] {movie, music, book};
+        }
+
+        return new Object[] {};
+    }
+
+    public Object[] scrapping2() {
+        if (type == null && keyword == null){
+
             try {
                 Document doc = Jsoup.connect(page).get();
 
