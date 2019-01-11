@@ -77,7 +77,7 @@ public class Scrapper {
         this.book = book;
     }
 
-    public Object[] scrapping() {
+    public Object[] scrapping2() {
         if (type == null && keyword == null){
 
             return new Object[] {movie, music, book};
@@ -86,7 +86,7 @@ public class Scrapper {
         return new Object[] {};
     }
 
-    public Object[] scrapping2() {
+    public Object[] scrapping() {
         if (type == null && keyword == null){
 
             try {

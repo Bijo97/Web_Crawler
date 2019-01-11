@@ -16,7 +16,8 @@ public class ScrapperTest {
     private static final Object[] getPagesVariables() {
         return new Object[] {
                 new Object[] {"http://localhost/project/sample_site_to_crawl/details.php?id=301"},
-                new Object[] {""}
+                new Object[] {""},
+                new Object[] {null}
         };
     }
 
@@ -25,6 +26,7 @@ public class ScrapperTest {
     public void pageIsNotNull(String _page) throws NoDataItemsException {
         String page = _page;
         Scrapper SUT = new Scrapper(page);
+
     }
 
     @Parameters(method = "getPagesVariables")
