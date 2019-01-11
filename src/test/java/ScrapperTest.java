@@ -33,6 +33,7 @@ public class ScrapperTest {
     public void pageIsNotNull(String _page) throws NoDataItemsException {
         String page = _page;
         Scrapper SUT = new Scrapper(page);
+
     }
 
     @Parameters(method = "getEmptyPage")

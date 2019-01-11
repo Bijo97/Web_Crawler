@@ -61,6 +61,7 @@ public class WCARestTest {
         SUT.setResponse(mockedCrawler);
 
         // ASSERT
+        verify(mockedCrawler).setBaseAddress(url);
         verify(mockedCrawler).getOutput();
 //        assertEquals("Should return JSON string as response", mockedCrawler.getOutput(), SUT.getResponse());
     }
@@ -80,6 +81,7 @@ public class WCARestTest {
         SUT.setResponse(mockedCrawler);
 
         // ASSERT
+        verify(mockedCrawler).setBaseAddress(url);
         verify(mockedCrawler).getOutput();
 //        assertEquals("Should return JSON string as response", mockedCrawler.getOutput(), SUT.getResponse());
     }
