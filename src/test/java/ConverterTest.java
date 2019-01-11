@@ -11,6 +11,7 @@ public class ConverterTest {
     @Test
     public void shouldReturnEmptyJSONStringWhenMediaObjectIsNull(){
         // ARRANGE
+        // Mocked media as dummy object
         Media mockedMedia = mock(Media.class);
 
         // Create SUT

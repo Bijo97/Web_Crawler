@@ -15,7 +15,15 @@ public class ScrapperTest {
 
     private static final Object[] getPagesVariables() {
         return new Object[] {
-                new Object[] {"http://localhost/project/sample_site_to_crawl/details.php?id=301"},
+                new Object[] {"files/Book.html"},
+                new Object[] {"files/Movie.html"},
+                new Object[] {"files/Music.html"},
+        };
+    }
+
+    private static final Object[] getEmptyPage() {
+        return new Object[] {
+                new Object[] {""},
                 new Object[] {""}
         };
     }
@@ -27,9 +35,9 @@ public class ScrapperTest {
         Scrapper SUT = new Scrapper(page);
     }
 
-    @Parameters(method = "getPagesVariables")
+    @Parameters(method = "getEmptyPage")
     @Test(expected = NoDataItemsException.class)
-    public void ThrowExceptionWhenPageIsEmpty(String _page) throws NoDataItemsException {
+    public void throwExceptionWhenURLStringIsEmpty(String _page) throws NoDataItemsException {
         String page = _page;
         Scrapper SUT = new Scrapper(page);
     }
@@ -86,41 +94,13 @@ public class ScrapperTest {
 //        SUT.setKeyword(keyword);
 //    }
 
+    @Parameters(method = "getPagesVariables")
     @Test
-    public void returnAllFoundDataWhenTypeAndKeywordAreNull() throws NoDataItemsException, WrongFormatException {
+    public void returnLoadedMediaObjectFromScrappedPage(String _page) throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = null;
         String keyword = null;
-        String page = "http://localhost/project/sample_site_to_crawl/details.php?id=203";
-        Scrapper SUT = new Scrapper(page);
-
-//        String genre = "Comedy";
-//        String format = "Blu-ray";
-//        String year = "1997";
-//        String name = "Office Space";
-//        Media media = new Media(genre,format,year,name);
-//        String director = "Mike Judge";
-//        List<String> writers = new ArrayList<>();
-//        List<String> stars = new ArrayList<>();]]]]]]]]]]]]]]]]]]]]]
-//        Movie movie = new Movie(media, director, writers, stars);
-//
-//        genre = "Classic";
-//        format = "CD";
-//        year = "2012";
-//        name = "Beethoven: Complete Symphonies";
-//        media = new Media(genre,format,year,name);
-//        String artist = "Ludwig van Beethoven";
-//        Music music = new Music(media, artist);
-//
-//        genre = "Tech";
-//        format = "Audio";
-//        year = "2011";
-//        name = "The Clean Coder: A Code of Conduct for Professional Programmers";
-//        media = new Media(genre,format,year,name);
-//        List<String> authors = new ArrayList<>();
-//        String publisher = "Prentice Hall";
-//        String isbn = "007-60920469811";
-//        Book book = new Book(media, authors, publisher, isbn);
+        Scrapper SUT = new Scrapper(_page);
 
         Movie mockedMovie = mock(Movie.class);
         Music mockedMusic = mock(Music.class);
@@ -136,7 +116,7 @@ public class ScrapperTest {
 
 
         //ASSERT
-        Assert.assertArrayEquals("Scrapper should return all data when type and keyword are null!", new Object[] {mockedMovie, mockedMusic, mockedBook}, SUT.scrapping());
+        Assert.assertNotNull("Scrapper should return a loaded Media object from scrapped page",SUT.scrapping());
     }
 
     @Test
