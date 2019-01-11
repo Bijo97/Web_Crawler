@@ -3,6 +3,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -80,18 +81,8 @@ public class Scrapper {
     public Object[] scrapping() {
         if (type == null && keyword == null){
 
-            return new Object[] {movie, music, book};
-        }
-
-        return new Object[] {};
-    }
-
-    public Object[] scrapping2() {
-        if (type == null && keyword == null){
-
             try {
-                Document doc = Jsoup.connect(page).get();
-
+                Document doc  = Jsoup.parse(new File(page), "ISO-8859-1");
                 String _name = doc.select("div.media-details > h1").first().text();
                 String _category = doc.select("div.media-details > table > tbody > tr").first().child(1).text();
 
