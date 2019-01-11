@@ -78,6 +78,14 @@ public class Scrapper {
         this.book = book;
     }
 
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
+    }
+
     public Object[] scrapping() {
         if (type == null && keyword == null){
 
