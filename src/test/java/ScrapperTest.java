@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -31,16 +32,27 @@ public class ScrapperTest {
     @Parameters(method = "getPagesVariables")
     @Test
     public void pageIsNotNull(String _page) throws NoDataItemsException {
+        //ARRANGE
         String page = _page;
         Scrapper SUT = new Scrapper(page);
 
+        //ACT
+
+        //ASSERT
+        assertEquals("Page should not be NULL",page,SUT.getPage());
     }
 
     @Parameters(method = "getEmptyPage")
     @Test(expected = NoDataItemsException.class)
     public void throwExceptionWhenURLStringIsEmpty(String _page) throws NoDataItemsException {
+        //ARRANGE
         String page = _page;
         Scrapper SUT = new Scrapper(page);
+
+        //ACT
+
+        //ASSERT
+//        assertEquals("Page should not be NULL",page,SUT.getPage());
     }
 
     @Test
