@@ -46,7 +46,6 @@ public class CrawlerTest{
         Crawler crawler = new Crawler(base_address);
         List<String> urls = new ArrayList<>();
         Assert.assertTrue(crawler.visitPage(base_address));
-
     }
 
 
