@@ -1,7 +1,5 @@
 import org.jsoup.Jsoup;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.TestName;
 import org.mockito.internal.util.collections.ListUtil;
 
@@ -18,6 +16,11 @@ public class ConverterTest {
     @Before
     public void setup() throws Exception {
         System.out.println("Setup for test '" + testName.getMethodName() + "'");
+    }
+
+    @AfterClass
+    public static void runAfterTestMethod() {
+        System.out.println("\nConverterTest completed!");
     }
 
     @Test
