@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Crawler implements Runnable {
+public class Crawler  {
     private String base_address,output;
     private URI uri;
     private Scrapper scrapper;
