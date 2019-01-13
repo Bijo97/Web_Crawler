@@ -25,7 +25,7 @@ import static org.mockito.Mockito.atLeast;
 public class CrawlerTest{
 
     @Rule
-    public Timeout globalTimeout = new Timeout(800);
+    public Timeout globalTimeout = new Timeout(900);
 
     @Test
     public void shouldHaveBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {
