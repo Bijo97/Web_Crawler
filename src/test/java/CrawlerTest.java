@@ -113,5 +113,31 @@ public class CrawlerTest{
     }
 
     @Test
+    public void converterConvertMetadataMethodIsCalledWhenConvertingMetadata() throws URISyntaxException, NoDataItemsException, MalformedURLException {
+        // ARRANGE
+        String base_address = "files/Catalog.html";
+
+        // Create metadata parameters
+        String _strategy = "DFS";
+        int _numberOfPage = 5;
+        int _timeElapsed = 600;
+        int _searchDepth = 3;
+
+        // Create mockConverter
+        Converter mockConverter = mock(Converter.class);
+        //Specify behaviours
+
+        // Create SUT
+        Crawler SUT = new Crawler(base_address);
+
+        // ACT
+        SUT.setConverter(mockConverter);
+        SUT.convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);
+
+        // ASSERT
+        verify(mockConverter).convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);
+    }
+
+    @Test
     public void sdf(){}
 }

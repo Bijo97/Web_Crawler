@@ -121,8 +121,12 @@ public class Crawler implements Runnable {
         this.scrapper.scrapping();
     }
 
-    public void convertMedia(Media m){
-        this.converter.convertMedia(m);
+    public String convertMedia(Media m){
+        return this.converter.convertMedia(m);
+    }
+
+    public String convertMetadata(String _strategy,int _numberOfPage,int _timeElapsed,int _searchDepth) {
+        return this.converter.convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);
     }
 
     public void setConverter(Converter converter) {
