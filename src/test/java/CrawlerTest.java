@@ -1,9 +1,10 @@
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
 import org.jsoup.nodes.Document;
-import org.mockito.Matchers;
+import org.junit.rules.Timeout;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -23,6 +24,8 @@ import static org.mockito.Mockito.atLeast;
 
 public class CrawlerTest{
 
+    @Rule
+    public Timeout globalTimeout = new Timeout(800);
 
     @Test
     public void shouldHaveBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {
