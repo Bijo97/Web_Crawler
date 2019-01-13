@@ -37,6 +37,7 @@ public class ScrapperTest {
         Scrapper SUT = new Scrapper(page);
 
         //ACT
+        SUT.setPage(page);
 
         //ASSERT
         assertEquals("Page should not be NULL",page,SUT.getPage());

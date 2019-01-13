@@ -108,7 +108,6 @@ public class Crawler  {
         return this.urls.size();
     }
 
-    @Override
     public void run() {
         this.visitPage(base_address);
         for (int i=0; i<this.urls.size() ; i++){
