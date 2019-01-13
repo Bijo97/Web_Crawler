@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Crawler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Web Crawler</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Crawler.java</span></div><h1>Crawler.java</h1><pre class="source lang-java linenums">
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Crawler  {
+    private String base_address,output;
+    private URI uri;
+    private Scrapper scrapper;
+    private Converter converter;
+
+<span class="fc" id="L26">    private List&lt;Object&gt; medias = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L27">    private List&lt;String&gt; urls = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L29">    public Crawler(String base_address) throws NoDataItemsException, MalformedURLException, URISyntaxException {</span>
+        Boolean checkEmptyBaseAddress;
+<span class="fc" id="L31">        checkEmptyBaseAddress = base_address.trim().isEmpty();</span>
+//        URL url = new URL(base_address);
+//        url.toURI();
+//
+//        this.uri = URI.create(base_address);
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if(!checkEmptyBaseAddress){</span>
+<span class="fc" id="L37">            this.base_address = base_address;</span>
+        } else{
+<span class="fc" id="L39">            throw new NoDataItemsException(&quot;Base Address shoud not be Empty!&quot;);</span>
+        }
+<span class="fc" id="L41">    }</span>
+
+    public String getOutput() {
+<span class="nc" id="L44">        return output;</span>
+    }
+
+    public void setScrapper(Scrapper scrapper) {
+<span class="fc" id="L48">        this.scrapper = scrapper;</span>
+<span class="fc" id="L49">    }</span>
+
+    public void setBaseAddress(String base_address) {
+<span class="nc" id="L52">        this.base_address = base_address;</span>
+<span class="nc" id="L53">    }</span>
+
+    public String getBaseAddress() {
+<span class="fc" id="L56">        return base_address;</span>
+    }
+
+    public boolean visitPage(String url){
+
+<span class="fc" id="L61">        List&lt;String&gt; linksOnthisPage = new ArrayList&lt;&gt;();</span>
+        //Base address is added to list of pages to be scrapped
+<span class="fc" id="L63">        linksOnthisPage.add(url);</span>
+
+<span class="pc bpc" id="L65" title="2 of 4 branches missed.">        if(!url.contains(&quot;javascript&quot;) &amp;&amp; !url.contains(&quot;#&quot;)){</span>
+
+            try{
+<span class="fc" id="L68">                Document doc  = Jsoup.parse(new File(base_address), &quot;ISO-8859-1&quot;);</span>
+//                Document doc = Jsoup.connect(url).timeout(0).get();
+<span class="fc" id="L70">                Elements linkTags = doc.select(&quot;a[href]&quot;);</span>
+
+<span class="fc bfc" id="L72" title="All 2 branches covered.">                for(Element e : linkTags){</span>
+<span class="fc" id="L73">                    String link = e.attr(&quot;href&quot;);</span>
+<span class="fc" id="L74">                    System.out.println(link);</span>
+                    //Check if link is not directed to the same page itself
+<span class="pc bpc" id="L76" title="3 of 6 branches missed.">                    if(!link.contains(&quot;#&quot;) &amp;&amp; !link.contains(&quot;javascript&quot;) &amp;&amp; !link.equals(url)){</span>
+
+<span class="pc bpc" id="L78" title="3 of 4 branches missed.">                        if(link.startsWith(&quot;http&quot;) || link.startsWith(&quot;www&quot;)) {</span>
+<span class="fc" id="L79">                            linksOnthisPage.add(link);</span>
+<span class="nc bnc" id="L80" title="All 2 branches missed.">                        }else if(link.contains(&quot;php&quot;)){</span>
+<span class="nc" id="L81">                            linksOnthisPage.add(link);</span>
+                        }
+<span class="nc bnc" id="L83" title="All 2 branches missed.">                        else if(link.startsWith(&quot;/&quot;)){</span>
+<span class="nc" id="L84">                            link = url + link.substring(1, link.length());</span>
+<span class="nc" id="L85">                            linksOnthisPage.add(link);</span>
+                        }else{
+<span class="nc" id="L87">                            System.out.println(&quot;LINK IGNORED DUE TO  -- &quot; + url);</span>
+                        }
+
+                    }else{
+<span class="nc" id="L91">                        System.out.println(&quot;LINK IGNORED -- &quot; + url);</span>
+                    }
+
+<span class="fc" id="L94">                }</span>
+<span class="fc" id="L95">                System.out.println(&quot;Links found in \&quot;&quot; + url+ &quot;\&quot; : &quot; + linksOnthisPage.size());</span>
+
+<span class="nc" id="L97">            }catch(Exception e){</span>
+//                System.out.println(&quot;EXCEPTION -- &quot; + url);
+<span class="pc" id="L99">            }</span>
+        }else{
+<span class="nc" id="L101">            System.out.println(&quot;UNWANTED URL -- &quot; + url);</span>
+        }
+<span class="fc" id="L103">        this.urls=linksOnthisPage;</span>
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">        return(linksOnthisPage.size()&gt;0);</span>
+    }
+
+    public int getPagesFound(){
+<span class="fc" id="L108">        return this.urls.size();</span>
+    }
+
+    public void run() {
+<span class="fc" id="L112">        this.visitPage(base_address);</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">        for (int i=0; i&lt;this.urls.size() ; i++){</span>
+<span class="fc" id="L114">            medias.add(this.scrap(this.urls.get(i)));</span>
+        }
+<span class="fc bfc" id="L116" title="All 2 branches covered.">        for (int i=0; i&lt;this.medias.size() ; i++){</span>
+<span class="fc" id="L117">            Object _media = this.medias.get(i);</span>
+<span class="fc" id="L118">            Media m = new Media(_media);</span>
+<span class="fc" id="L119">            this.convertMedia(m);</span>
+        }
+<span class="fc" id="L121">    }</span>
+
+    public Object scrap(String url){
+<span class="fc" id="L124">        this.scrapper.setPage(url);</span>
+<span class="fc" id="L125">        return this.scrapper.scrapping();</span>
+    }
+
+    public String convertMedia(Media m){
+<span class="fc" id="L129">        return this.converter.convertMedia(m);</span>
+    }
+
+    public String convertMetadata(String _strategy,int _numberOfPage,int _timeElapsed,int _searchDepth) {
+<span class="fc" id="L133">        return this.converter.convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);</span>
+    }
+
+    public void setConverter(Converter converter) {
+<span class="fc" id="L137">        this.converter = converter;</span>
+<span class="fc" id="L138">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

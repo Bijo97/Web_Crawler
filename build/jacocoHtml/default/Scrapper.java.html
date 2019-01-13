@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Scrapper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Web Crawler</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Scrapper.java</span></div><h1>Scrapper.java</h1><pre class="source lang-java linenums">import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Scrapper {
+    String page;
+    String type;
+    String keyword;
+    Movie movie;
+    Music music;
+    Book book;
+
+<span class="fc" id="L19">    public Scrapper(String page) throws NoDataItemsException {</span>
+<span class="pc bpc" id="L20" title="1 of 4 branches missed.">        Boolean checkPage = page.trim().isEmpty() || page == null;</span>
+
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (checkPage) {</span>
+<span class="fc" id="L23">            throw new NoDataItemsException(&quot;Page can't be null or empty!&quot;);</span>
+        } else {
+<span class="fc" id="L25">            this.page = page;</span>
+        }
+<span class="fc" id="L27">    }</span>
+
+    public String getType() {
+<span class="fc" id="L30">        return type;</span>
+    }
+
+    public void setType(String type) throws WrongFormatException {
+<span class="pc bpc" id="L34" title="2 of 8 branches missed.">        if (type == null || type.equals(&quot;movies&quot;) || type.equals(&quot;musics&quot;) || type.equals(&quot;books&quot;)){</span>
+<span class="fc" id="L35">            this.type = type;</span>
+        } else {
+<span class="fc" id="L37">            throw new WrongFormatException(&quot;Type can only be movies, musics, books, or null!&quot;);</span>
+        }
+<span class="fc" id="L39">    }</span>
+
+    public String getKeyword() {
+<span class="fc" id="L42">        return keyword;</span>
+    }
+
+    public void setKeyword(String keyword) throws WrongFormatException {
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (this.type == null){</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">            if (keyword == null){</span>
+<span class="fc" id="L48">                this.keyword = keyword;</span>
+            } else {
+<span class="nc" id="L50">                throw new WrongFormatException(&quot;Keyword for type: null can only be null!&quot;);</span>
+            }
+        } else {
+<span class="fc" id="L53">            this.keyword = keyword;</span>
+        }
+<span class="fc" id="L55">    }</span>
+
+    public Movie getMovie() {
+<span class="nc" id="L58">        return movie;</span>
+    }
+
+    public void setMovie(Movie movie) {
+<span class="fc" id="L62">        this.movie = movie;</span>
+<span class="fc" id="L63">    }</span>
+
+    public Music getMusic() {
+<span class="nc" id="L66">        return music;</span>
+    }
+
+    public void setMusic(Music music) {
+<span class="fc" id="L70">        this.music = music;</span>
+<span class="fc" id="L71">    }</span>
+
+    public Book getBook() {
+<span class="nc" id="L74">        return book;</span>
+    }
+
+    public void setBook(Book book) {
+<span class="fc" id="L78">        this.book = book;</span>
+<span class="fc" id="L79">    }</span>
+
+    public String getPage() {
+<span class="fc" id="L82">        return page;</span>
+    }
+
+    public void setPage(String page) {
+<span class="nc" id="L86">        this.page = page;</span>
+<span class="nc" id="L87">    }</span>
+
+    public Object[] scrapping() {
+<span class="pc bpc" id="L90" title="1 of 4 branches missed.">        if (type == null &amp;&amp; keyword == null){</span>
+
+            try {
+<span class="fc" id="L93">                Document doc  = Jsoup.parse(new File(page), &quot;ISO-8859-1&quot;);</span>
+<span class="fc" id="L94">                String _name = doc.select(&quot;div.media-details &gt; h1&quot;).first().text();</span>
+<span class="fc" id="L95">                String _category = doc.select(&quot;div.media-details &gt; table &gt; tbody &gt; tr&quot;).first().child(1).text();</span>
+
+<span class="fc" id="L97">                Elements datas = doc.select(&quot;div.media-details &gt; table &gt; tbody &gt; tr&quot;);</span>
+<span class="fc" id="L98">                String _genre = datas.get(1).child(1).text();</span>
+<span class="fc" id="L99">                String _format = datas.get(2).child(1).text();</span>
+<span class="fc" id="L100">                String _year = datas.get(3).child(1).text();</span>
+<span class="fc" id="L101">                Media m = new Media(_genre,_format,_year,_name);</span>
+
+<span class="fc bfc" id="L103" title="All 2 branches covered.">                if (_category.equals(&quot;Music&quot;)){</span>
+<span class="fc" id="L104">                    String _artist = datas.get(4).child(1).text();</span>
+
+<span class="fc" id="L106">                    this.music = new Music(m,_artist);</span>
+//                    System.out.println(this.music.getArtist());
+<span class="fc bfc" id="L108" title="All 2 branches covered.">                }else if (_category.equals(&quot;Books&quot;)){</span>
+<span class="fc" id="L109">                    String[] authors = datas.get(4).child(1).text().split(&quot;,&quot;);</span>
+<span class="fc" id="L110">                    List&lt;String&gt; _authors = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L111" title="All 2 branches covered.">                    for (String s:authors) {</span>
+<span class="fc" id="L112">                        _authors.add( s );</span>
+                    }
+
+<span class="fc" id="L115">                    String _publisher = datas.get(5).child(1).text();</span>
+<span class="fc" id="L116">                    String _isbn = datas.get(6).child(1).text();</span>
+
+<span class="fc" id="L118">                    this.book = new Book(m,_authors,_publisher,_isbn);</span>
+//                    System.out.println(this.book.getAuthors());
+<span class="pc bpc" id="L120" title="1 of 2 branches missed.">                }else if (_category.equals(&quot;Movies&quot;)){</span>
+<span class="fc" id="L121">                    String _director = datas.get(4).child(1).text();</span>
+<span class="fc" id="L122">                    String[] writers = datas.get(5).child(1).text().split(&quot;,&quot;);</span>
+<span class="fc" id="L123">                    List&lt;String&gt; _writers = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L124" title="All 2 branches covered.">                    for (String s:writers) {</span>
+<span class="fc" id="L125">                        _writers.add( s );</span>
+                    }
+<span class="fc" id="L127">                    String[] stars = datas.get(6).child(1).text().split(&quot;,&quot;);</span>
+<span class="fc" id="L128">                    List&lt;String&gt; _stars = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L129" title="All 2 branches covered.">                    for (String s:stars) {</span>
+<span class="fc" id="L130">                        _stars.add( s );</span>
+                    }
+
+<span class="fc" id="L133">                    this.movie = new Movie(m,_director,_writers,_stars);</span>
+//                    System.out.println(this.movie.getStars());
+                }
+<span class="nc" id="L136">            } catch (IOException e) {</span>
+<span class="nc" id="L137">                e.printStackTrace();</span>
+<span class="nc" id="L138">            } catch (WrongFormatException e) {</span>
+<span class="nc" id="L139">                e.printStackTrace();</span>
+<span class="nc" id="L140">            } catch (NoDataItemsException e) {</span>
+<span class="nc" id="L141">                e.printStackTrace();</span>
+<span class="pc" id="L142">            }</span>
+
+<span class="fc" id="L144">            return new Object[] {movie, music, book};</span>
+        }
+
+<span class="fc" id="L147">        return new Object[] {};</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

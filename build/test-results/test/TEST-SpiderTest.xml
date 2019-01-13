@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SpiderTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-01-13T21:04:36" hostname="PC-A21" time="0.059">
+  <properties/>
+  <testcase name="canSubmitNewUrlIfUrlIsUnvisited" classname="SpiderTest" time="0.001"/>
+  <testcase name="[0] 1, 2 (constructorShouldSetMaxDepthAndMaxUrl)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[1] 2, 4 (constructorShouldSetMaxDepthAndMaxUrl)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[0] null, 1 (constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[1] 1, null (constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[2] -1, 1 (constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[3] 1, -1 (constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0)" classname="SpiderTest" time="0.0"/>
+  <testcase name="[0] 0, 1 (constructorShouldThrowNDIEIfMaxDepthAndMaxUrlIs0)" classname="SpiderTest" time="0.001"/>
+  <testcase name="[1] 1, 0 (constructorShouldThrowNDIEIfMaxDepthAndMaxUrlIs0)" classname="SpiderTest" time="0.0"/>
+  <testcase name="shouldHaveMaxDepthAndMaxUrls" classname="SpiderTest" time="0.0"/>
+  <testcase name="getBaseAddressFromCrawlerBeforeDoingFunctionRun" classname="SpiderTest" time="0.049"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

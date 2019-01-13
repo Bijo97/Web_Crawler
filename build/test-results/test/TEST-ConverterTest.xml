@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ConverterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-13T21:04:35" hostname="PC-A21" time="0.667">
+  <properties/>
+  <testcase name="shouldReturnJSONStringOfMetadataParameters" classname="ConverterTest" time="0.003"/>
+  <testcase name="shouldReturnEmptyJSONStringWhenMediaObjectIsNull" classname="ConverterTest" time="0.583"/>
+  <testcase name="shouldReturnJSONStringOfTheMediaObject" classname="ConverterTest" time="0.08"/>
+  <system-out><![CDATA[Setup for test 'shouldReturnJSONStringOfMetadataParameters'
+Setup for test 'shouldReturnEmptyJSONStringWhenMediaObjectIsNull'
+Setup for test 'shouldReturnJSONStringOfTheMediaObject'
+
+ConverterTest completed!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
