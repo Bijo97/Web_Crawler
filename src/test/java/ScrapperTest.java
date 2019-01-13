@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(JUnitParamsRunner.class)
@@ -134,6 +135,27 @@ public class ScrapperTest {
     }
 
     @Test
+    public void findDataBasedOnKeyword() throws NoDataItemsException, WrongFormatException{
+        //ARRANGE
+        String type = "musics";
+        String keyword = "biljo";
+        String page = "<html>Something</html>";
+        Scrapper SUT = new Scrapper(page);
+
+        Music mockedMusic = mock(Music.class);
+        when(mockedMusic.getArtist()).thenReturn("biljo");
+
+        //ACT
+        SUT.setType(type);
+        SUT.setKeyword(keyword);
+        SUT.setMusic(mockedMusic);
+        String artist = SUT.getKeywordData();
+
+        //ASSERT
+        verify(mockedMusic).getArtist();
+    }
+
+    @Test
     public void returnEmptyObjectWhenNoDataFound() throws NoDataItemsException, WrongFormatException {
         //ARRANGE
         String type = "musics";
@@ -141,11 +163,11 @@ public class ScrapperTest {
         String page = "<html>Something</html>";
         Scrapper SUT = new Scrapper(page);
         Music mockedMusic = mock(Music.class);
-
-        //ACT
         SUT.setType(type);
         SUT.setKeyword(keyword);
         SUT.setMusic(mockedMusic);
+
+        //ACT
 
         //ASSERT
         Assert.assertArrayEquals("Scrapper should return empty object when no data found!", new Object[] {}, SUT.scrapping());

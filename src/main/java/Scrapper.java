@@ -73,6 +73,10 @@ public class Scrapper {
         this.page = page;
     }
 
+    public String getKeywordData(){
+        return this.music.getArtist();
+    }
+
     public Object[] scrapping() {
         if (type == null && keyword == null){
 
