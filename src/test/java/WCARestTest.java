@@ -1,16 +1,30 @@
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.jsoup.Jsoup;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
-
+@RunWith(JUnitParamsRunner.class)
 public class WCARestTest {
+    private static final Object[] getURLVariables() {
+        return new Object[] {
+                new Object[] {"www.google.com"},
+                new Object[] {""},
+                new Object[] {null},
+                new Object[] {"www.google.com try out"},
+        };
+    }
+
+    @Parameters(method = "getURLVariables")
     @Test
-    public void hasUrlStringAsRequest(){
+    public void hasUrlStringAsRequest(String _url) throws NoDataItemsException {
         // ARRANGE
-        String url = "www.google.com";
+        String url = _url;
         // Create SUT
         WCARest SUT = new WCARest(url);
 
@@ -20,23 +34,24 @@ public class WCARestTest {
         assertEquals("WCARest should have a String request",url,SUT.getRequest());
     }
 
-//    @Test
-////    public void urlContainsBaseAddress(){
-////        // ARRANGE
-////        String url = "www.google.com";
-////        // Create SUT
-////        WCARest SUT = new WCARest(url);
-////
-////        // ACT
-////
-////        // ASSERT
-////        assertEquals("WCARest URL should contain base address",url,SUT.getRequest());
-////    }
-
-    @Test
-    public void urlCouldContainTypeAndKeyword(){
+    @Parameters(method = "getURLVariables")
+    @Test(expected = NoDataItemsException.class)
+    public void ThrowExceptionWhenURLStringIsNullOrEmpty(String _url) throws NoDataItemsException {
         // ARRANGE
-        String url = "www.google.com try out";
+        String url = _url;
+        // Create SUT
+        WCARest SUT = new WCARest(url);
+
+        // ACT
+
+        // ASSERT
+    }
+
+    @Parameters(method = "getURLVariables")
+    @Test
+    public void urlCouldContainTypeAndKeyword(String _url) throws NoDataItemsException {
+        // ARRANGE
+        String url = _url;
         // Create SUT
         WCARest SUT = new WCARest(url);
 
@@ -47,7 +62,7 @@ public class WCARestTest {
     }
 
     @Test
-    public void shouldReturnJSONStringAsResponse(){
+    public void shouldReturnJSONStringAsResponse() throws NoDataItemsException {
         // ARRANGE
         String url = "www.google.com";
 
@@ -67,7 +82,7 @@ public class WCARestTest {
     }
 
     @Test
-    public void JSONStringOutputCouldBeEmpty(){
+    public void JSONStringOutputCouldBeEmpty() throws NoDataItemsException {
         // ARRANGE
         String url = "www.google.com";
 

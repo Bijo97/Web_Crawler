@@ -5,19 +5,23 @@ public class WCARest {
     private String type;
     private String keyword;
 
-    public WCARest(String request) {
+    public WCARest(String request) throws NoDataItemsException {
         this.request = request;
 
-        String[] data = request.split(" ");
-        if (data.length == 3){
-            url = data[0];
-            type = data[1];
-            keyword = data[2];
-        } else if (data.length == 2){
-            url = data[0];
-            type = data[1];
+        if (request == null || request.equals("")){
+            throw new NoDataItemsException("URL can't be null or empty!");
         } else {
-            url = data[0];
+            String[] data = request.split(" ");
+            if (data.length == 3){
+                url = data[0];
+                type = data[1];
+                keyword = data[2];
+            } else if (data.length == 2){
+                url = data[0];
+                type = data[1];
+            } else {
+                url = data[0];
+            }
         }
     }
 
