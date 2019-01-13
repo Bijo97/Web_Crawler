@@ -3,6 +3,7 @@ import org.jsoup.select.Elements;
 import org.junit.Assert;
 import org.junit.Test;
 import org.jsoup.nodes.Document;
+import org.mockito.Matchers;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -13,6 +14,8 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.notNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -52,15 +55,25 @@ public class CrawlerTest{
     public void couldExtractPageLinksFromBaseAddress() throws URISyntaxException, NoDataItemsException, IOException {
         // ARRANGE
         String base_address = "files/Catalog.html";
+
         // Create mockScrapper
         Scrapper mockScrapper = mock(Scrapper.class);
         //Specify behaviours
+        Object[] _object = new Object[]{"default","dummy"};
+        when(mockScrapper.scrapping()).thenReturn(_object);
+
+        // Create mockConverter
+        Converter mockConverter = mock(Converter.class);
+        //Specify behaviours
+        when(mockConverter.convertMedia(any(Media.class))).thenReturn("DefaultJSON");
+
 
         // Create SUT
         Crawler SUT = new Crawler(base_address);
 
         // ACT
         SUT.setScrapper(mockScrapper);
+        SUT.setConverter(mockConverter);
         SUT.run();
         int pagesFound = SUT.getPagesFound();
 
@@ -72,15 +85,23 @@ public class CrawlerTest{
     public void scrapperScrapMethodIsCalledAsManyAsPagesFound() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         // ARRANGE
         String base_address = "files/Catalog.html";
+
         // Create mockScrapper
         Scrapper mockScrapper = mock(Scrapper.class);
         //Specify behaviours
+
+        // Create mockConverter
+        Converter mockConverter = mock(Converter.class);
+        //Specify behaviours
+        when(mockConverter.convertMedia(any(Media.class))).thenReturn("DefaultJSON");
+
 
         // Create SUT
         Crawler SUT = new Crawler(base_address);
 
         // ACT
         SUT.setScrapper(mockScrapper);
+        SUT.setConverter(mockConverter);
         SUT.run();
         int pagesFound = SUT.getPagesFound();
 
@@ -137,7 +158,4 @@ public class CrawlerTest{
         // ASSERT
         verify(mockConverter).convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);
     }
-
-    @Test
-    public void sdf(){}
 }

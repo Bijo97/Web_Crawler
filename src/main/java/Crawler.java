@@ -112,13 +112,18 @@ public class Crawler implements Runnable {
     public void run() {
         this.visitPage(base_address);
         for (int i=0; i<this.urls.size() ; i++){
-            this.scrap(this.urls.get(i));
+            medias.add(this.scrap(this.urls.get(i)));
+        }
+        for (int i=0; i<this.medias.size() ; i++){
+            Object _media = this.medias.get(i);
+            Media m = new Media(_media);
+            this.convertMedia(m);
         }
     }
 
-    public void scrap(String url){
+    public Object scrap(String url){
         this.scrapper.setPage(url);
-        this.scrapper.scrapping();
+        return this.scrapper.scrapping();
     }
 
     public String convertMedia(Media m){

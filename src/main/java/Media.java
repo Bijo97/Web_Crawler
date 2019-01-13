@@ -39,6 +39,15 @@ public class Media {
 
     }
 
+    Media(Object _object){
+        this.genre = "DefaultGenre";
+        this.format = "DefaultFormat";
+        this.name = "DefaultName";
+        this.year = "DefaultYear";
+    }
+
+    Media(){}
+
     public String getGenre() {
         return genre;
     }
