@@ -4,6 +4,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -19,25 +20,32 @@ import java.util.concurrent.Executors;
 public class Crawler  {
     private String base_address,output;
     private URI uri;
-    List<String> urls = new ArrayList<>();
+    private Scrapper scrapper;
+    private Converter converter;
+
+    private List<Object> medias = new ArrayList<>();
+    private List<String> urls = new ArrayList<>();
 
     public Crawler(String base_address) throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Boolean checkEmptyBaseAddress;
         checkEmptyBaseAddress = base_address.trim().isEmpty();
-        URL url = new URL(base_address);
-        url.toURI();
-
-        this.uri = URI.create(base_address);
+//        URL url = new URL(base_address);
+//        url.toURI();
+//
+//        this.uri = URI.create(base_address);
         if(!checkEmptyBaseAddress){
             this.base_address = base_address;
         } else{
             throw new NoDataItemsException("Base Address shoud not be Empty!");
         }
-
     }
 
     public String getOutput() {
         return output;
+    }
+
+    public void setScrapper(Scrapper scrapper) {
+        this.scrapper = scrapper;
     }
 
     public void setBaseAddress(String base_address) {
@@ -51,22 +59,24 @@ public class Crawler  {
     public boolean visitPage(String url){
 
         List<String> linksOnthisPage = new ArrayList<>();
+        //Base address is added to list of pages to be scrapped
+        linksOnthisPage.add(url);
 
         if(!url.contains("javascript") && !url.contains("#")){
 
             try{
-                Document doc = Jsoup.connect(url).timeout(0).get();
+                Document doc  = Jsoup.parse(new File(base_address), "ISO-8859-1");
+//                Document doc = Jsoup.connect(url).timeout(0).get();
                 Elements linkTags = doc.select("a[href]");
 
                 for(Element e : linkTags){
                     String link = e.attr("href");
+                    System.out.println(link);
+                    //Check if link is not directed to the same page itself
                     if(!link.contains("#") && !link.contains("javascript") && !link.equals(url)){
+
                         if(link.startsWith("http") || link.startsWith("www")) {
-                            if (link.contains(uri.getHost())) {
-                                linksOnthisPage.add(link);
-                            } else {
-                                System.out.println("SOME OTHER WEBSITE -- " + link);
-                            }
+                            linksOnthisPage.add(link);
                         }else if(link.contains("php")){
                             linksOnthisPage.add(link);
                         }
@@ -76,14 +86,16 @@ public class Crawler  {
                         }else{
                             System.out.println("LINK IGNORED DUE TO  -- " + url);
                         }
+
                     }else{
                         System.out.println("LINK IGNORED -- " + url);
                     }
+
                 }
-                System.out.println("\n\nLinks found in \"" + url+ "\" : " + linksOnthisPage.size());
+                System.out.println("Links found in \"" + url+ "\" : " + linksOnthisPage.size());
 
             }catch(Exception e){
-                System.out.println("EXCEPTION -- " + url);
+//                System.out.println("EXCEPTION -- " + url);
             }
         }else{
             System.out.println("UNWANTED URL -- " + url);
@@ -92,7 +104,37 @@ public class Crawler  {
         return(linksOnthisPage.size()>0);
     }
 
+    public int getPagesFound(){
+        return this.urls.size();
+    }
 
-    public void printUrl() {
+    @Override
+    public void run() {
+        this.visitPage(base_address);
+        for (int i=0; i<this.urls.size() ; i++){
+            medias.add(this.scrap(this.urls.get(i)));
+        }
+        for (int i=0; i<this.medias.size() ; i++){
+            Object _media = this.medias.get(i);
+            Media m = new Media(_media);
+            this.convertMedia(m);
+        }
+    }
+
+    public Object scrap(String url){
+        this.scrapper.setPage(url);
+        return this.scrapper.scrapping();
+    }
+
+    public String convertMedia(Media m){
+        return this.converter.convertMedia(m);
+    }
+
+    public String convertMetadata(String _strategy,int _numberOfPage,int _timeElapsed,int _searchDepth) {
+        return this.converter.convertMetadata(_strategy,_numberOfPage,_timeElapsed,_searchDepth);
+    }
+
+    public void setConverter(Converter converter) {
+        this.converter = converter;
     }
 }
