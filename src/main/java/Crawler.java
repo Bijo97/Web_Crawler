@@ -21,7 +21,9 @@ public class Crawler implements Runnable {
     private String base_address,output;
     private URI uri;
     private Scrapper scrapper;
+    private Converter converter;
 
+    private List<Object> medias = new ArrayList<>();
     private List<String> urls = new ArrayList<>();
 
     public Crawler(String base_address) throws NoDataItemsException, MalformedURLException, URISyntaxException {
@@ -117,5 +119,13 @@ public class Crawler implements Runnable {
     public void scrap(String url){
         this.scrapper.setPage(url);
         this.scrapper.scrapping();
+    }
+
+    public void convertMedia(Media m){
+        this.converter.convertMedia(m);
+    }
+
+    public void setConverter(Converter converter) {
+        this.converter = converter;
     }
 }

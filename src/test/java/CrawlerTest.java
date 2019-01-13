@@ -19,6 +19,8 @@ import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.atLeast;
 
 public class CrawlerTest{
+
+
     @Test
     public void shouldHaveBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         // ARRANGE
@@ -31,6 +33,19 @@ public class CrawlerTest{
 
         // ASSERT
         assertEquals("Should have correct base address", base_address, SUT.getBaseAddress());
+    }
+
+    @Test(expected = NoDataItemsException.class)
+    public void ifBaseAddressIsEmptyThrowException() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+        //ARRANGE
+        String base_address = "";
+
+        // Create SUT
+        Crawler SUT = new Crawler(base_address);
+
+        //ACT
+
+        //ASSERT
     }
 
     @Test
@@ -73,18 +88,30 @@ public class CrawlerTest{
         verify(mockScrapper, atLeast(pagesFound)).scrapping();
     }
 
-    @Test(expected = NoDataItemsException.class)
-    public void ifBaseAddressIsEmptyThrowException() throws NoDataItemsException, MalformedURLException, URISyntaxException {
-        //ARRANGE
-        String base_address = "";
+    @Test
+    public void converterConvertMediaMethodIsCalledWhenConvertingMedia() throws URISyntaxException, NoDataItemsException, MalformedURLException {
+        // ARRANGE
+        String base_address = "files/Catalog.html";
+
+        // Create mockMedia
+        Media mockMedia = mock(Media.class);
+        //Specify behaviours
+
+        // Create mockConverter
+        Converter mockConverter = mock(Converter.class);
+        //Specify behaviours
 
         // Create SUT
         Crawler SUT = new Crawler(base_address);
 
-        //ACT
+        // ACT
+        SUT.setConverter(mockConverter);
+        SUT.convertMedia(mockMedia);
 
-        //ASSERT
+        // ASSERT
+        verify(mockConverter).convertMedia(mockMedia);
     }
 
-
+    @Test
+    public void sdf(){}
 }
