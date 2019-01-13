@@ -29,10 +29,6 @@ public class WCARest {
         return request;
     }
 
-    public void setRequest(String request) {
-        this.request = request;
-    }
-
     public String getUrl() {
         return url;
     }
@@ -48,9 +44,5 @@ public class WCARest {
     public void setResponse(Crawler crawler) {
         crawler.setBaseAddress(url);
         this.response = crawler.getOutput();
-    }
-
-    public String getResponse() {
-        return response;
     }
 }

@@ -1,6 +1,5 @@
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
@@ -54,24 +53,12 @@ public class Scrapper {
         }
     }
 
-    public Movie getMovie() {
-        return movie;
-    }
-
     public void setMovie(Movie movie) {
         this.movie = movie;
     }
 
-    public Music getMusic() {
-        return music;
-    }
-
     public void setMusic(Music music) {
         this.music = music;
-    }
-
-    public Book getBook() {
-        return book;
     }
 
     public void setBook(Book book) {
