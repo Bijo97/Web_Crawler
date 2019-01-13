@@ -1,5 +1,6 @@
 import org.jsoup.Jsoup;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.rules.TestName;
 import org.mockito.internal.util.collections.ListUtil;
 
 import static org.mockito.Mockito.mock;
@@ -8,6 +9,20 @@ import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
 public class ConverterTest {
+
+    @Rule
+    public final TestName testName = new TestName();
+
+    @Before
+    public void setup() throws Exception {
+        System.out.println("Setup for test '" + testName.getMethodName() + "'");
+    }
+
+    @AfterClass
+    public static void runAfterTestMethod() {
+        System.out.println("\nConverterTest completed!");
+    }
+
     @Test
     public void shouldReturnEmptyJSONStringWhenMediaObjectIsNull(){
         // ARRANGE

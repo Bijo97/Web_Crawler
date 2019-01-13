@@ -1,9 +1,12 @@
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
 import org.jsoup.nodes.Document;
-import org.mockito.Matchers;
+import org.junit.rules.TestWatcher;
+import org.junit.rules.Timeout;
+import org.junit.runner.Description;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -23,6 +26,22 @@ import static org.mockito.Mockito.atLeast;
 
 public class CrawlerTest{
 
+    @Rule
+    public Timeout globalTimeout = new Timeout(900);
+
+    private static String watchedLog;
+    @Rule
+    public TestWatcher watchman= new TestWatcher() {
+        @Override
+        protected void failed(Throwable e, Description description) {
+            System.out.println(description + " " + "failed!\n");
+        }
+
+        @Override
+        protected void succeeded(Description description) {
+            System.out.println(description + " " + "succeeded!\n");
+        }
+    };
 
     @Test
     public void shouldHaveBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {

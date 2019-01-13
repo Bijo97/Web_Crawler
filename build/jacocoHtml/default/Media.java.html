@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Media.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Web Crawler</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Media.java</span></div><h1>Media.java</h1><pre class="source lang-java linenums">
+
+public class Media {
+    private String genre, format, year, name;
+
+<span class="fc" id="L6">    Media(String genre, String format, String year, String name) throws NoDataItemsException, WrongFormatException {</span>
+        Boolean checkGenre, checkFormat,checkYear,checkName, checkYearFormat;
+<span class="fc" id="L8">        checkGenre = genre.trim().isEmpty();</span>
+<span class="pc bpc" id="L9" title="2 of 4 branches missed.">        checkFormat = format == null || format.trim().length() == 0;</span>
+<span class="pc bpc" id="L10" title="1 of 4 branches missed.">        checkYear = year == null || year.trim().length() == 0;</span>
+<span class="pc bpc" id="L11" title="2 of 4 branches missed.">        checkName = name == null || name.trim().length() == 0;</span>
+<span class="fc" id="L12">        checkYearFormat = year.chars().allMatch(Character :: isDigit);</span>
+
+<span class="pc bpc" id="L14" title="1 of 2 branches missed.">        if(!checkGenre){</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">            if(!checkFormat){</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">                if(!checkYear){</span>
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">                    if(!checkName){</span>
+<span class="pc bpc" id="L18" title="1 of 4 branches missed.">                        if(year.length() == 4 &amp;&amp; checkYearFormat){</span>
+<span class="fc" id="L19">                            this.genre = genre;</span>
+<span class="fc" id="L20">                            this.format = format;</span>
+<span class="fc" id="L21">                            this.name = name;</span>
+<span class="fc" id="L22">                            this.year = year;</span>
+                        } else{
+<span class="fc" id="L24">                            throw new WrongFormatException(&quot;Wrong Year Format. Year format should be yyyy&quot;);</span>
+                        }
+                    } else {
+<span class="nc" id="L27">                        throw new NoDataItemsException(&quot;Name should not be empty&quot;);</span>
+                    }
+                } else {
+<span class="fc" id="L30">                    throw new NoDataItemsException(&quot;Year should not be empty&quot;);</span>
+                }
+            } else{
+<span class="nc" id="L33">                throw new NoDataItemsException(&quot;Format should not be empty&quot;);</span>
+            }
+        } else {
+<span class="nc" id="L36">            throw new NoDataItemsException( &quot;Genre should not be empty&quot;);</span>
+        }
+
+
+<span class="fc" id="L40">    }</span>
+
+<span class="fc" id="L42">    Media(Object _object){</span>
+<span class="fc" id="L43">        this.genre = &quot;DefaultGenre&quot;;</span>
+<span class="fc" id="L44">        this.format = &quot;DefaultFormat&quot;;</span>
+<span class="fc" id="L45">        this.name = &quot;DefaultName&quot;;</span>
+<span class="fc" id="L46">        this.year = &quot;DefaultYear&quot;;</span>
+<span class="fc" id="L47">    }</span>
+
+<span class="nc" id="L49">    Media(){}</span>
+
+    public String getGenre() {
+<span class="fc" id="L52">        return genre;</span>
+    }
+
+    public String getFormat() {
+<span class="fc" id="L56">        return format;</span>
+    }
+
+    public String getYear() {
+<span class="fc" id="L60">        return year;</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L64">        return name;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

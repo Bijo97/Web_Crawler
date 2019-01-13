@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Book.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Web Crawler</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Book.java</span></div><h1>Book.java</h1><pre class="source lang-java linenums">import java.util.List;
+import java.util.regex.Pattern;
+
+public class Book {
+    private Media media;
+    private List&lt;String&gt; authors;
+    private String publisher;
+    private String isbn;
+
+<span class="fc" id="L10">    public Book(Media media, List&lt;String&gt; authors, String publisher, String isbn) throws NoDataItemsException, WrongFormatException {</span>
+<span class="fc" id="L11">        Pattern p = Pattern.compile(&quot;\\d{3}-\\d{10}&quot;);</span>
+
+        Boolean checkAuthors, checkPublisher, checkISBN, checkISBNFormat;
+<span class="fc" id="L14">        checkAuthors = authors.isEmpty();</span>
+<span class="fc" id="L15">        checkPublisher = publisher.trim().isEmpty();</span>
+<span class="fc" id="L16">        checkISBN = isbn.trim().isEmpty();</span>
+<span class="fc" id="L17">        checkISBNFormat = p.matcher(isbn).matches();</span>
+
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">        if(!checkAuthors){</span>
+<span class="pc bpc" id="L20" title="1 of 2 branches missed.">            if(!checkPublisher){</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">                if(!checkISBN){</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">                    if(checkISBNFormat){</span>
+<span class="fc" id="L23">                        this.media = media;</span>
+<span class="fc" id="L24">                        this.authors = authors;</span>
+<span class="fc" id="L25">                        this.publisher = publisher;</span>
+<span class="fc" id="L26">                        this.isbn = isbn;</span>
+                    } else {
+<span class="fc" id="L28">                        throw new WrongFormatException(&quot;ISBN Format should be ddd-dddddddddd  (3)-(10)&quot;);</span>
+                    }
+
+                } else {
+<span class="fc" id="L32">                    throw new NoDataItemsException(&quot;ISBN should not be empty&quot;);</span>
+                }
+            } else {
+<span class="nc" id="L35">                throw new NoDataItemsException(&quot;Publisher should not be empty.&quot;);</span>
+            }
+        } else {
+<span class="nc" id="L38">            throw new NoDataItemsException(&quot;Author should not be empty.&quot;);</span>
+        }
+
+<span class="fc" id="L41">    }</span>
+
+    public List getAuthors() {
+<span class="fc" id="L44">        return authors;</span>
+    }
+
+    public String getPublisher() {
+<span class="fc" id="L48">        return publisher;</span>
+    }
+
+    public String getISBN() {
+<span class="fc" id="L52">        return isbn;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ScrapperTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-01-13T21:04:36" hostname="PC-A21" time="0.111">
+  <properties/>
+  <testcase name="[0] files/Book.html (returnLoadedMediaObjectFromScrappedPage)" classname="ScrapperTest" time="0.077"/>
+  <testcase name="[1] files/Movie.html (returnLoadedMediaObjectFromScrappedPage)" classname="ScrapperTest" time="0.014"/>
+  <testcase name="[2] files/Music.html (returnLoadedMediaObjectFromScrappedPage)" classname="ScrapperTest" time="0.011"/>
+  <testcase name="typeCanBeNull" classname="ScrapperTest" time="0.0"/>
+  <testcase name="ThrowExceptionWhenTypeIsNotCorrect" classname="ScrapperTest" time="0.001"/>
+  <testcase name="keywordCanBeNull" classname="ScrapperTest" time="0.0"/>
+  <testcase name="[0]  (throwExceptionWhenURLStringIsEmpty)" classname="ScrapperTest" time="0.0"/>
+  <testcase name="[1]  (throwExceptionWhenURLStringIsEmpty)" classname="ScrapperTest" time="0.0"/>
+  <testcase name="returnEmptyObjectWhenNoDataFound" classname="ScrapperTest" time="0.002"/>
+  <testcase name="[0] files/Book.html (pageIsNotNull)" classname="ScrapperTest" time="0.001"/>
+  <testcase name="[1] files/Movie.html (pageIsNotNull)" classname="ScrapperTest" time="0.0"/>
+  <testcase name="[2] files/Music.html (pageIsNotNull)" classname="ScrapperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

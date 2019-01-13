@@ -19,11 +19,13 @@ public class MovieTest {
     Media media;
     @Test
     public void shouldHaveDirectorWritersAndStars() throws WrongFormatException, NoDataItemsException {
+        //ARRANGE
         Media mockedMedia = mock(Media.class);
         List<String> writers = new ArrayList<>();
         List<String> stars = new ArrayList<>();
         List<String> stars1 = new ArrayList<>();
 
+        //ACT
         media = new Media(genre,format,year,name);
 
         String director = "Mike Judge";
@@ -37,23 +39,25 @@ public class MovieTest {
 
         Movie movie  = new Movie(media, director, writers, stars);
 
+        //ASSERT
         Assert.assertEquals("Mike Judge", movie.getDirector());
         Assert.assertTrue(compareList(writers,movie.getWriters()));
         Assert.assertTrue(compareList(stars,movie.getStars()));
-
     }
 
     @Test (expected = NoDataItemsException.class)
     public void directorWritersAndStarsAreNotEmpty() throws WrongFormatException, NoDataItemsException {
+        //ARRANGE
         String director = "Mike Judge";
         List<String> writers = new ArrayList<>();
         List<String> stars = new ArrayList<>();
 
+        //ACT
         writers.add("William Goldman");
-
         media = new Media(genre,format,year,name);
-
         Movie movie = new Movie(media, director, writers, stars);
+
+        //ASSERT
     }
 
     public static boolean compareList(List ls1,List ls2){

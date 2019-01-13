@@ -7,6 +7,8 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+apply plugin: 'jacoco'
+
 repositories {
     mavenCentral()
 }
@@ -22,4 +24,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.owlike/genson
     compile group: 'com.owlike', name: 'genson', version: '1.4'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MovieTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-13T21:04:36" hostname="PC-A21" time="0.001">
+  <properties/>
+  <testcase name="shouldHaveDirectorWritersAndStars" classname="MovieTest" time="0.001"/>
+  <testcase name="directorWritersAndStarsAreNotEmpty" classname="MovieTest" time="0.0"/>
+  <system-out><![CDATA[[William Goldman]
+[William Goldman]
+[Ron Livingston, Jennifer Aniston, David Herman, Ajay Naidu, Diedrich Bader, Stephen Root]
+[Ron Livingston, Jennifer Aniston, David Herman, Ajay Naidu, Diedrich Bader, Stephen Root]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
