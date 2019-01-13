@@ -40,6 +40,10 @@ public class Crawler implements Runnable {
         return output;
     }
 
+    public void setBaseAddress(String base_address) {
+        this.base_address = base_address;
+    }
+
     public String getBaseAddress() {
         return base_address;
     }

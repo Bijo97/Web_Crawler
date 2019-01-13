@@ -42,6 +42,7 @@ public class WCARest {
     }
 
     public void setResponse(Crawler crawler) {
+        crawler.setBaseAddress(url);
         this.response = crawler.getOutput();
     }
 

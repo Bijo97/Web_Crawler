@@ -1,3 +1,13 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Scrapper {
     String page;
     String type;
@@ -68,9 +78,69 @@ public class Scrapper {
         this.book = book;
     }
 
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
+    }
+
     public Object[] scrapping() {
         if (type == null && keyword == null){
-            //Jsoup...
+
+            try {
+                Document doc  = Jsoup.parse(new File(page), "ISO-8859-1");
+                String _name = doc.select("div.media-details > h1").first().text();
+                String _category = doc.select("div.media-details > table > tbody > tr").first().child(1).text();
+
+                Elements datas = doc.select("div.media-details > table > tbody > tr");
+                String _genre = datas.get(1).child(1).text();
+                String _format = datas.get(2).child(1).text();
+                String _year = datas.get(3).child(1).text();
+                Media m = new Media(_genre,_format,_year,_name);
+
+                if (_category.equals("Music")){
+                    String _artist = datas.get(4).child(1).text();
+
+                    this.music = new Music(m,_artist);
+//                    System.out.println(this.music.getArtist());
+                }else if (_category.equals("Books")){
+                    String[] authors = datas.get(4).child(1).text().split(",");
+                    List<String> _authors = new ArrayList<>();
+                    for (String s:authors) {
+                        _authors.add( s );
+                    }
+
+                    String _publisher = datas.get(5).child(1).text();
+                    String _isbn = datas.get(6).child(1).text();
+
+                    this.book = new Book(m,_authors,_publisher,_isbn);
+//                    System.out.println(this.book.getAuthors());
+                }else if (_category.equals("Movies")){
+                    String _director = datas.get(4).child(1).text();
+                    String[] writers = datas.get(5).child(1).text().split(",");
+                    List<String> _writers = new ArrayList<>();
+                    for (String s:writers) {
+                        _writers.add( s );
+                    }
+                    String[] stars = datas.get(6).child(1).text().split(",");
+                    List<String> _stars = new ArrayList<>();
+                    for (String s:stars) {
+                        _stars.add( s );
+                    }
+
+                    this.movie = new Movie(m,_director,_writers,_stars);
+//                    System.out.println(this.movie.getStars());
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (WrongFormatException e) {
+                e.printStackTrace();
+            } catch (NoDataItemsException e) {
+                e.printStackTrace();
+            }
+
             return new Object[] {movie, music, book};
         }
 
