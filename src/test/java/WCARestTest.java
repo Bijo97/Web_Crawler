@@ -14,9 +14,8 @@ public class WCARestTest {
     private static final Object[] getURLVariables() {
         return new Object[] {
                 new Object[] {"www.google.com"},
-                new Object[] {""},
-                new Object[] {null},
-                new Object[] {"www.google.com try out"},
+                new Object[] {"www.yahoo.com"},
+                new Object[] {"www.bing.com"},
         };
     }
 
@@ -34,11 +33,10 @@ public class WCARestTest {
         assertEquals("WCARest should have a String request",url,SUT.getRequest());
     }
 
-    @Parameters(method = "getURLVariables")
     @Test(expected = NoDataItemsException.class)
-    public void ThrowExceptionWhenURLStringIsNullOrEmpty(String _url) throws NoDataItemsException {
+    public void ThrowExceptionWhenURLStringIsNullOrEmpty() throws NoDataItemsException {
         // ARRANGE
-        String url = _url;
+        String url = "";
         // Create SUT
         WCARest SUT = new WCARest(url);
 
@@ -47,11 +45,10 @@ public class WCARestTest {
         // ASSERT
     }
 
-    @Parameters(method = "getURLVariables")
     @Test
-    public void urlCouldContainTypeAndKeyword(String _url) throws NoDataItemsException {
+    public void urlCouldContainTypeAndKeyword() throws NoDataItemsException {
         // ARRANGE
-        String url = _url;
+        String url = "www.google.com try out";
         // Create SUT
         WCARest SUT = new WCARest(url);
 
