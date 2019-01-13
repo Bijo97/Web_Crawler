@@ -1,4 +1,5 @@
 import org.jsoup.Jsoup;
+import org.jsoup.select.Elements;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,8 +9,10 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
-public class CrawlerTest {
+public class CrawlerTest{
     @Test
     public void connectionShouldEstablished(){
         String url = "http://www.google.com";
@@ -35,6 +38,14 @@ public class CrawlerTest {
         String base_address = "http://www.google.com";
         Crawler crawler = new Crawler(base_address);
 
+    }
+
+    @Test
+    public void couldExtractURLsUsingBaseAddress() throws URISyntaxException, NoDataItemsException, IOException {
+        String base_address = "http://localhost/tci/";
+        Crawler crawler = new Crawler(base_address);
+        List<String> urls = new ArrayList<>();
+        Assert.assertTrue(crawler.visitPage(base_address));
     }
 
 
