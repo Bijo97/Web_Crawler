@@ -19,7 +19,9 @@ import java.util.concurrent.Executors;
 public class Crawler implements Runnable {
     private String base_address,output;
     private URI uri;
-    List<String> urls = new ArrayList<>();
+    private Scrapper scrapper;
+
+    private List<String> urls = new ArrayList<>();
 
     public Crawler(String base_address) throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Boolean checkEmptyBaseAddress;
@@ -33,11 +35,14 @@ public class Crawler implements Runnable {
         } else{
             throw new NoDataItemsException("Base Address shoud not be Empty!");
         }
-
     }
 
     public String getOutput() {
         return output;
+    }
+
+    public void setScrapper(Scrapper scrapper) {
+        this.scrapper = scrapper;
     }
 
     public void setBaseAddress(String base_address) {
@@ -92,12 +97,20 @@ public class Crawler implements Runnable {
         return(linksOnthisPage.size()>0);
     }
 
+    public int getPagesFound(){
+        return this.urls.size();
+    }
 
     @Override
     public void run() {
-
+        this.visitPage(base_address);
+        for (int i=0; i<this.urls.size() ; i++){
+            this.scrap(this.urls.get(i));
+        }
     }
 
-    public void printUrl() {
+    public void scrap(String url){
+        this.scrapper.setPage(url);
+        this.scrapper.scrapping();
     }
 }

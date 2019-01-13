@@ -14,10 +14,13 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.atLeast;
 
 public class CrawlerTest{
     @Test
-    public void shouldHasBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+    public void shouldHaveBaseAddress() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         // ARRANGE
         String base_address = "http://www.google.com";
 
@@ -27,10 +30,30 @@ public class CrawlerTest{
         // ACT
 
         // ASSERT
-        assertEquals("Should has correct base address", base_address, SUT.getBaseAddress());
+        assertEquals("Should have correct base address", base_address, SUT.getBaseAddress());
     }
 
-    @Test(expected = NoDataItemsException.class)
+    @Test
+    public void scrapperScrapMethodIsCalledAsManyAsPagesFound() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+        // ARRANGE
+        String base_address = "http://www.google.com";
+        // Create mockScrapper
+        Scrapper mockScrapper = mock(Scrapper.class);
+        //Specify behaviours
+
+        // Create SUT
+        Crawler SUT = new Crawler(base_address);
+
+        // ACT
+        SUT.setScrapper(mockScrapper);
+        SUT.run();
+        int pagesFound = SUT.getPagesFound();
+
+        // ASSERT
+        verify(mockScrapper, atLeast(pagesFound)).scrapping();
+    }
+
+    @Test(expected = MalformedURLException.class)
     public void baseAddressIsNotEmpty() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         String base_address = "";
         Crawler crawler = new Crawler(base_address);
