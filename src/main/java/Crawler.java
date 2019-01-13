@@ -16,7 +16,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Crawler implements Runnable {
+public class Crawler  {
     private String base_address,output;
     private URI uri;
     List<String> urls = new ArrayList<>();
@@ -92,11 +92,6 @@ public class Crawler implements Runnable {
         return(linksOnthisPage.size()>0);
     }
 
-
-    @Override
-    public void run() {
-
-    }
 
     public void printUrl() {
     }

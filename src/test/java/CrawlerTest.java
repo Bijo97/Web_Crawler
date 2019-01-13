@@ -41,12 +41,15 @@ public class CrawlerTest{
     }
 
     @Test
-    public void couldExtractURLsUsingBaseAddress() throws URISyntaxException, NoDataItemsException, IOException {
+    public void couldVisitPageUsingBaseAddress() throws URISyntaxException, NoDataItemsException, IOException {
         String base_address = "http://localhost/tci/";
         Crawler crawler = new Crawler(base_address);
         List<String> urls = new ArrayList<>();
         Assert.assertTrue(crawler.visitPage(base_address));
     }
+
+
+
 
 
 }
