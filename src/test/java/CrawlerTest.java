@@ -54,9 +54,16 @@ public class CrawlerTest{
     }
 
     @Test(expected = MalformedURLException.class)
-    public void baseAddressIsNotEmpty() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+    public void ifBaseAddressIsEmptyThrowException() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+        //ARRANGE
         String base_address = "";
-        Crawler crawler = new Crawler(base_address);
+
+        // Create SUT
+        Crawler SUT = new Crawler(base_address);
+
+        //ACT
+
+        //ASSERT
     }
 
     @Test
