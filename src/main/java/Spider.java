@@ -1,5 +1,16 @@
+
+import java.net.URL;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Spider {
     private int max_depth, max_url;
+    private SpiderLeg spiderLeg;
+    private Set<URL> master_list = new HashSet<>();
+
+    public Spider(SpiderLeg spiderLeg){
+        this.spiderLeg = spiderLeg;
+    }
 
     public Spider(int max_depth, int max_url) throws NoDataItemsException{
         if(max_depth==0){
@@ -24,5 +35,38 @@ public class Spider {
 
     public int getMaxURL() {
         return max_url;
+    }
+
+    public int getSpiderLegDepth(){
+        return spiderLeg.getDepth();
+    }
+
+    public void submitNewURL(URL url, int depth) {
+        if(shouldVisit(url,depth)) {
+            spiderLeg = new SpiderLeg(url, depth);
+            master_list.add(url);
+        }
+    }
+
+    public boolean shouldVisit(URL url, int depth) {
+        if(master_list.contains(url)){
+            return false;
+        }
+        return true;
+    }
+
+    public void setSpiderLeg(SpiderLeg spiderLeg) {
+        spiderLeg = spiderLeg;
+    }
+
+    public int countList() {
+        return master_list.size();
+    }
+
+    public void addNewURLs(SpiderLeg spiderLeg) {
+        for(URL url : spiderLeg.getUrlList()){
+            submitNewURL(url, spiderLeg.getDepth() + 1);
+        }
+
     }
 }
