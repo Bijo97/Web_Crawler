@@ -140,4 +140,13 @@ public class SpiderTest {
         Assert.assertEquals(1,spider.getFuturesSize());
     }
 
+    @Test
+    public void spiderLegTasksIs0AfterCheckPageGrab() throws NoDataItemsException {
+        Spider spider = new Spider(MAX_DEPTH, MAX_URL);
+        SpiderLeg spiderLeg = mock(SpiderLeg.class);
+        Assert.assertFalse(spider.checkPageGrab());
+        Assert.assertEquals(0,spider.getFuturesSize());
+    }
+
+
 }
