@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 
 import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
@@ -52,14 +53,14 @@ public class SpiderTest {
 
 
     @Test
-    public void shouldHaveMaxDepthAndMaxUrls() throws NoDataItemsException {
+    public void shouldHaveMaxDepthAndMaxUrls() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(MAX_DEPTH,MAX_DEPTH);
         assertEquals(MAX_DEPTH,spider.getMaxDepth());
     }
 
     @Test
     @Parameters(method = "getSpider")
-    public void constructorShouldSetMaxDepthAndMaxUrl(int max_depth, int max_url) throws NoDataItemsException {
+    public void constructorShouldSetMaxDepthAndMaxUrl(int max_depth, int max_url) throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(max_depth,max_url);
 
         assertEquals(max_depth,spider.getMaxDepth());
@@ -68,27 +69,20 @@ public class SpiderTest {
 
     @Test(expected = IllegalArgumentException.class)
     @Parameters(method = "getSpiderIAE")
-    public void constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0(int max_depth, int max_url) throws NoDataItemsException {
+    public void constructorShouldThrowIAEIfMaxDepthAndMaxUrlIsNullOrBelow0(int max_depth, int max_url) throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(max_depth, max_url);
 
     }
 
     @Test(expected = NoDataItemsException.class)
     @Parameters(method = "getSpider0")
-    public void constructorShouldThrowNDIEIfMaxDepthAndMaxUrlIs0(int max_depth, int max_url) throws NoDataItemsException {
+    public void constructorShouldThrowNDIEIfMaxDepthAndMaxUrlIs0(int max_depth, int max_url) throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(max_depth,max_url);
     }
 
-    @Test
-    public void getBaseAddressFromCrawlerBeforeDoingFunctionRun() throws NoDataItemsException {
-        Crawler crawler = mock(Crawler.class);
-        when(crawler.getBaseAddress()).thenReturn("http://localhost/tci/");
-        Spider spider = new Spider(MAX_DEPTH,MAX_URL);
-
-    }
 
     @Test
-    public void canSubmitNewUrlToSpiderLegTaskListUsingUrlAndDepth() throws NoDataItemsException, MalformedURLException {
+    public void canSubmitNewUrlToSpiderLegTaskListUsingUrlAndDepth() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         URL urll = new URL(url);
 
         SpiderLeg mockSpiderLeg = mock(SpiderLeg.class);
@@ -104,7 +98,7 @@ public class SpiderTest {
     }
 
     @Test
-    public void canSubmitNewUrlToListIfUrlIsUnvisited() throws NoDataItemsException, MalformedURLException {
+    public void canSubmitNewUrlToListIfUrlIsUnvisited() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         URL urll = new URL(url);
 
         Spider spider = new Spider(MAX_DEPTH,MAX_URL);
@@ -114,7 +108,7 @@ public class SpiderTest {
     }
 
     @Test
-    public void returnFalseIfURLisAlreadyVisitedIfContainsByMasterList() throws NoDataItemsException, MalformedURLException {
+    public void returnFalseIfURLisAlreadyVisitedIfContainsByMasterList() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         URL urll = new URL(url);
 
         Spider spider = new Spider(MAX_DEPTH,MAX_URL);
@@ -123,7 +117,7 @@ public class SpiderTest {
     }
 
     @Test
-    public void canAddNewURLsUsingSpiderLegUrlList() throws NoDataItemsException {
+    public void canAddNewURLsUsingSpiderLegUrlList() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(MAX_DEPTH,MAX_URL);
         SpiderLeg mockedSpiderLeg = mock(SpiderLeg.class);
 
@@ -133,7 +127,7 @@ public class SpiderTest {
     }
 
     @Test
-    public void canAddSpiderLegTasksToExecutorWhenSubmitNewUnvisitedURL() throws NoDataItemsException, MalformedURLException {
+    public void canAddSpiderLegTasksToExecutorWhenSubmitNewUnvisitedURL() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(MAX_DEPTH,MAX_URL);
         URL urll = new URL(url);
         spider.submitNewURL(urll,depth);
@@ -141,12 +135,28 @@ public class SpiderTest {
     }
 
     @Test
-    public void spiderLegTasksIs0AfterCheckPageGrab() throws NoDataItemsException {
+    public void spiderLegTasksIs0AfterCheckPageGrab() throws NoDataItemsException, MalformedURLException, URISyntaxException {
         Spider spider = new Spider(MAX_DEPTH, MAX_URL);
         SpiderLeg spiderLeg = mock(SpiderLeg.class);
-        Assert.assertFalse(spider.checkPageGrab());
+        Assert.assertFalse(spider.checkPageGrabs());
         Assert.assertEquals(0,spider.getFuturesSize());
     }
 
+    @Test
+    public void canGetBaseAddressFromCrawler() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+        Spider spider = new Spider(MAX_DEPTH,MAX_URL);
+        Crawler crawler = mock(Crawler.class);
+        //spider.go();
+        spider.setAddress();
+        when(crawler.getBaseAddress()).thenReturn("http://localhost/tci/");
+//        verify(crawler).getBaseAddress();
+
+    }
+
+    @Test
+    public void canMeasureTimeWhileDoingCheckPageGrabs() throws NoDataItemsException, MalformedURLException, URISyntaxException {
+        Spider spider = new Spider(MAX_DEPTH,MAX_URL);
+        //pider.go("");
+    }
 
 }
