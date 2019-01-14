@@ -132,5 +132,12 @@ public class SpiderTest {
         verify(mockedSpiderLeg).getUrlList();
     }
 
+    @Test
+    public void canAddSpiderLegTasksToExecutorWhenSubmitNewUnvisitedURL() throws NoDataItemsException, MalformedURLException {
+        Spider spider = new Spider(MAX_DEPTH,MAX_URL);
+        URL urll = new URL(url);
+        spider.submitNewURL(urll,depth);
+        Assert.assertEquals(1,spider.getFuturesSize());
+    }
 
 }
