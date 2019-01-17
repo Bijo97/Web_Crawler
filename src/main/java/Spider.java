@@ -16,10 +16,13 @@ public class Spider {
     private SpiderLeg spiderLeg;
     private Set<URL> master_list = new HashSet<>();
     private Crawler crawler = new Crawler("http://localhost/tci/");
+    URL url;
     private List<Future<SpiderLeg>> futures = new ArrayList<>();
     private ExecutorService executorService = Executors.newFixedThreadPool(5);
     public Spider(SpiderLeg spiderLeg) throws URISyntaxException, NoDataItemsException, MalformedURLException {
         this.spiderLeg = spiderLeg;
+        String start = crawler.getBaseAddress();
+        url = new URL(start);
     }
 
     public Spider(int max_depth, int max_url) throws NoDataItemsException, URISyntaxException, MalformedURLException {
@@ -37,6 +40,7 @@ public class Spider {
         }
         this.max_depth = max_depth;
         this.max_url = max_url;
+
     }
 
     public int getMaxDepth() {
@@ -70,7 +74,8 @@ public class Spider {
     public void setAddress(){
         this.pageAddress = crawler.getBaseAddress();
     }
-
+    public URL getAddress(){return url;
+}
     public void setSpiderLeg(SpiderLeg spiderLeg) {
         spiderLeg = spiderLeg;
     }
@@ -120,4 +125,6 @@ public class Spider {
         while (checkPageGrabs()) ;
         stopWatch.stop();
     }
+
+
 }

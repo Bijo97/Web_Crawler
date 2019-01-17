@@ -11,6 +11,10 @@ public class SpiderLeg implements Callable<SpiderLeg> {
         setURLAndDepth(url,depth);
     }
 
+    public SpiderLeg(Spider mockSpider) {
+        URL url = mockSpider.getAddress();
+    }
+
     public void setURLAndDepth(URL url, int depth) {
         this.url = url;
         this.depth = depth;
